@@ -34,48 +34,21 @@ h2 {
     border-bottom: solid darkgreen 1px;
 }
 
-h3 {
-    font-size: 1.6em;
-    color: #e6e600;
-    margin: 15px 0 0;
+p {
+    font-size: 1em;
+    //color: #e6e600;
+    margin: 10px 25px;
     font-family: Arial;
 }
 
-h4 {
-    font-size: 1.25em;
-    color: #003300;
-    font-family: Arial;
-    padding: 21px 20px 0px 20px;
+.indent {
+    margin 10px 50px;
 }
 
 main {
     background-color: #ccffcc;
     background: rgb(120, 200, 120);
     box-shadow: 12px 12px 5px #444444;
-}
-
-li {
-    list-style: none;
-    font-size: 1.25em;
-    padding: 3px;
-}
-
-li a {
-    color: #003300;
-    line-height: 24px;
-}
-
-li:hover {
-    background-color: darkgreen;
-}
-
-li a:hover {
-    color: #e6e600;
-}
-
-footer a {
-    color: lightgreen;
-    letter-spacing: 1px;
 }
 
 footer {

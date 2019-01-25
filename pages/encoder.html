@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="homepage" content="width=device-width, initial-scale=1">
+        <title>CIT261 Jonathan Carlson Encoder</title>
+        <meta name = "description" content="CIT261 Encoder.">
+        <link rel="stylesheet" href="../styles/normalize.css">
+        <link id="styles" rel="stylesheet" href="../styles/encoder.css">
+    </head>    
+
+    <body style="background-color: #e6e6ff;">
+        <img src="../images/code.jpg" alt="picture is broken" id="pic">
+        <p class="bar">Text Coder<br><span style="font-size: 38%">Created by 
+            Jonathan Carlson</span></p>
+        <p id="showText" style="font-size: 2em; margin-top: 15px;">
+            Enter the text you would like to encrypt:</p>
+        <input type="text" id="input">
+        <div class="center">
+            <button class="button" onclick=displayText()>Click To Encrypt</button>
+            <input type="text" id="password" title=
+            "If a password is present when encrypting, the recipient of the 
+             message must enter the same password to decipher it." 
+            placeholder="Password (optional)">
+        </div>
+        <p id="encryption" style="font-size: 1em"></p>
+        <p id="showText" style="font-size: 2em; margin-top: 20px;">
+            Enter the text you would like deciphered:</p>
+        <input type="text" id="decipher" style="font-size: 1em; font-weight: normal">
+        <div class="center">
+            <button class="button" onclick=decryptText()>Click To Decipher </button>
+        </div>
+        <p id="decoded"></p>
+        <p id="debug"></p>
+    
+        <script src="../script/encoder.js"></script>
+    </body>
+
+    <footer>            
+        <p>&copy; 2019 &#9670; Jonathan Carlson &#9670; Huntsville Alabama &#9670; <a href="">Car99020@BYUI.edu</a></p>
+    </footer>
+</html>

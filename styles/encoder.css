@@ -1,0 +1,96 @@
+#pic {
+    position: absolute;
+    width: 100%;
+    height: 138px;
+    z-index: -1;
+    margin-left: -10px;
+}
+
+.bar {
+    color: #f2f2f2;
+    text-align: center;
+    font-size: 3.5em;
+    padding: 45px 0 30px;
+    margin: -10px -10px 0;
+    line-height: 25px;
+}
+
+#input, #decipher {
+    text-align: center;
+    height: 40px;
+    width: 100%;
+    margin: 15px 0 15px 0;
+    font-size: 1.2em;
+    font-weight: bold;
+    box-shadow: #4d4d4d 3px 3px;
+}
+
+#showText {
+    font-size: 1em;
+    color: #4d4d4d;
+    margin: 0;
+    text-align: center;
+    height: 30px;
+    text-shadow: 2px 2px 15px darkgrey;
+}
+
+#encryption {
+    font-size: 1em;
+    color: #4d4d4d;
+    text-align: center;
+    height: 200px;
+    width: 80%;
+    overflow: hidden;
+    margin: auto;
+}
+
+#decoded {
+    font-size: 1em;
+    color: #4d4d4d;
+    margin: auto;
+    text-align: center;
+    font-size: 1.6em;
+    font-weight: bold;
+    width: 80%;
+}
+
+.button {
+    display inline-block;
+    text-align: center;
+    padding: 10px;
+    font-size: 1.5em;
+    color: #4d4d4d;
+    margin-bottom: 20px;
+    box-shadow: black 3px 3px;
+    border-radius: 6px;
+
+    font-family: Time New Roman;
+}
+
+.center {
+    text-align: center;
+}
+
+input:focus {
+    background-color: #ffffcc;
+    border: solid #d9d9d9 2px;
+}
+
+#password {
+    height: 25px;
+    width: 180px;
+    margin: 0 0 0 40px;;
+    font-weight: bold;
+    box-shadow: #4d4d4d 3px 3px;
+    padding: 7px;
+    color: grey;
+}
+
+footer {
+    background-color: #00001a;
+    padding: 20px;
+    color: white;
+    //border-radius: 0 0 40px 40px;
+    box-shadow: 12px 12px 5px #444444;
+    text-align: center;
+}
