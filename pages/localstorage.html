@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="resume" content="width=device-width, initial-scale=1">
+        <title>JavaScript Basics</title>
+        <meta name = "JS - Conditionals, Functions, Variables, Parameters, Arrays, Associative Arrays" content="CIT261 portfolio for Jonathan Carlson.">
+        <link rel="../stylesheet" href="../styles/normalize.css">
+        <link id="styles" rel="stylesheet" href="../styles/proficiency.css">
+    </head>
+
+    <body>
+        
+        <h1>
+           JavaScript - Object creation, Functions, Inheritence, Properties, Methods, and Instantiation
+        </h1>   
+        
+        <h3 class="paragraph">This demonstration builds on the JS objects demonstration by converting our objects to strings using "stringify", then back to objects using JSON. JSON is good for creating formats that allow easier transfer of information over the web and storage. <br><br>Enter your student information to create a student object, then scroll down and click on the additional buttons.</h3>
+        
+        <h2>Student Name:</h2>
+        <br>
+        <input type="text" id="Name" size="50">
+        <br><br>
+        <h2>GPA:</h2>
+        <br>
+        <input type="text" id="GPA" size="50">
+        <br><br>
+        <h2>Major:</h2>
+        <br>
+        <input type="text" id="Major" size="50">
+        <br><br>
+        <h2>Location:</h2>
+        <br>
+        <input type="text" id="Loc" size="50">
+        <br>
+        
+        <div class="row">
+            <div class="column">
+                <button type="button" onclick=createStudent(1)>Create & Display Object 1</button>
+                <h2>Student Name:</h2>
+                <h3 id="nameone">?</h3>
+                <h2>Student GPA:</h2>
+                <h3 id ="gpaone">?</h3>
+                <h2>Student Major:</h2>
+                <h3 id ="majorone">?</h3>
+                <h2>Student Location:</h2>
+                <h3 id ="locone">?</h3>
+                <h2>Student Gender:</h2>
+                <h3 id ="genone">?</h3>
+                <h2>Student Age:</h2>
+                <h3 id ="ageone">?</h3>
+            </div>
+            
+            <div class="column">
+                <button type="button" onclick=createStudent(2)>Create & Display Object 2</button>
+                <h2>Student Name:</h2>
+                <h3 id="nametwo">?</h3>
+                <h2>Student GPA:</h2>
+                <h3 id ="gpatwo">?</h3>
+                <h2>Student Major:</h2>
+                <h3 id ="majortwo">?</h3>
+                <h2>Student Location:</h2>
+                <h3 id ="loctwo">?</h3>
+                <h2>Student Gender:</h2>
+                <h3 id ="gentwo">?</h3>
+                <h2>Student Age:</h2>
+                <h3 id ="agetwo">?</h3>
+            </div>
+            
+            <div class="column">
+                <button type="button" onclick=createStudent(3)>Create & Display Object 3</button>
+                <h2>Student Name:</h2>
+                <h3 id="namethree">?</h3>
+                <h2>Student GPA:</h2>
+                <h3 id ="gpathree">?</h3>
+                <h2>Student Major:</h2>
+                <h3 id ="majorthree">?</h3>
+                <h2>Student Location:</h2>
+                <h3 id ="locthree">?</h3>
+                <h2>Student Gender:</h2>
+                <h3 id ="genthree">?</h3>
+                <h2>Student Age:</h2>
+                <h3 id ="agethree">?</h3>
+            </div>
+        </div> 
+
+        <h3 class="paragraph">Now 
+        that your student objects are created, we will introduce another 
+        function that inherits the objects we just used and adds two 
+        additional properties- age and gender. Though it is a bit
+        difficult to tell from this example, the new object does in fact
+        contain all the properties of the previous object because of the
+        inheritence. You can tell this by looking at the source code and
+        testing by uncommenting the document.write() function, or by simply
+        clicking on the lower buttons before the initial object is created
+        to see that they don't work until they have something to inerit from.</h3>
+        
+        <h2>Student's Gender:</h2>
+        <br>
+        <input type="text" id="Gen" size="50">
+        <br><br>
+        <h2>Student's Age:</h2>
+        <br>
+        <input type="text" id="Age" size="50">
+        <br><br>
+        
+        <div class="row">
+            <div class="column">
+                <button type="button" onclick=completeStudent(1)>Update Object 1</button>\
+            </div>
+                
+            <div class="column">
+                <button type="button" onclick=completeStudent(2)>Update Object 2</button>
+            </div>
+                                
+            <div class="column">
+                <button type="button" onclick=completeStudent(3)>Update Object 3</button>
+            </div>
+        </div>
+        
+        <h1>
+           JavaScript - Stringify
+        </h1>  
+        
+        <h3 class="paragraph">We will now stringify our objects using JSON. Interestingly, when I first 
+            tried to stringify the above objects, the results only showed the object
+            without its parent object properties. I researched the problem and found an
+            answer on <a href="https://stackoverflow.com/questions/8779249/how-to-stringify-inherited-objects-to-json">StackOverflow.com</a>. Aparently <i style="color: purple">"the author [of JSON] has not only 
+            documented the problems, but also written a library called HydrateJS that 
+            helps [to correct this issue]."</i> To solve this problem, I created another 
+            function constructor ("flatten") to accept our cStudent objects as parameters, then simply
+            accepts each property as part of itself. The new object is then what we use to
+            create our JSON string. Click the below buttons to stringify each of the different 
+            student objects.</h3>
+        
+        <button type="button" onclick=stringify(cStudent1,1)>Stringify Object 1</button>
+        <h3 id="strone"></h3>
+                
+        <button type="button" onclick=stringify(cStudent2,2)>Stringify Object 2</button>
+        <h3 id="strtwo"></h3>   
+        
+        <button type="button" onclick=stringify(cStudent3,3)>Stringify Object 3</button>
+        <h3 id="strthree"></h3>
+    
+        <h1>
+           JavaScript - Local Storage API, Storing and Retrieving Simple Data, Arrays, Associate Arrays, and Objects
+        </h1>
+        
+        <h3 class="paragraph">Before we convert our string back into an object, let's save it to both the localstorage and sessionstorage. This can only be done while our object is in string format. To convert other JS object types such as numbers and arrays, we would use the built-in <i style="color: green">".toString()"</i> library, but our JSON is used for our custom objects. Copy and paste a string to the input box, then click the buttons. </h3>
+        
+        <input type="text" id="store" placeholder="Enter your string here" size="50"><br>
+        
+        <div class="row">
+            <div class="column">
+                <button type="button" onclick=storeThis("l")>Store to Local Storage</button>
+
+            </div>
+            
+            <div class="column">
+                <button type="button" onclick=storeThis("s")>Store to Session Storage</button>
+
+            </div>
+        </div>     
+        
+        <h3 class="paragraph"> Note that nothing appears when you click the buttons. However, when you refresh the page (F5), your text appears in both fields. If you were to close your browser and re-open it, the local storage text would remain but the session storage text would be blank. Try it out!</h3>
+        
+        <h2>Local Storage:</h2>
+        <h3 id="lString"></h3><br>
+        
+        <h2>Session Storage:</h2>
+        <h3 id="sString"></h3>
+        
+        <h3 class="paragraph"> This feature would be very useful for creating a browser based shopping list (if you really really really hate writing with a pen) or even creating save points for a JavaScript game you are making if you are a nerd like me!</h3>        
+        
+        <h1>
+           JavaScript - JSON and Parse
+        </h1>         
+        
+        <h3 class="paragraph">Now lets return our string back into objects. Copy a string and paste it into the input box, then click <i style="color:green">"Convert to Object"</i>. If you want, try changing the properties of your pasted string.</h3>
+
+        <input type="text" id="jsonString" placeholder="Enter your string here" size="50"><br>
+
+        <button type="button" onclick="jsonParse()">Convert to Object</button>
+
+        <h2>Name:</h2><h3 id="objname"></h3>
+        <h2>GPA:</h2><h3 id="objgpa"></h3>
+        <h2>Major:</h2><h3 id="objmajor"></h3>
+        <h2>Location:</h2><h3 id="objloc"></h3>
+        <h2>Gender:</h2><h3 id="objgen"></h3>
+        <h2>Age:</h2><h3 id="objage"></h3>
+
+        <script src="../script/localstorage.js"></script><br><br><br>
+    </body>
+    
+    <footer>            
+        <p>&copy; 2019 &#9670; Jonathan Carlson &#9670; Huntsville Alabama &#9670; <a href="">Car99020@BYUI.edu</a></p>
+    </footer>
+    
+
+</html>
