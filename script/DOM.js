@@ -49,7 +49,7 @@ function removeItem() {
         
     // Iterates through a ul list by id, detects a match, the removes it.
     if(detectItem(selection)) {
-        for(i = 1, length = list.getElementsByTagName("li").length; i <=
+        for(i = 0, length = list.getElementsByTagName("li").length; i <
             length; i++) {
             if(list.childNodes[i].innerHTML == selection) {
                 list.removeChild(list.childNodes[i]);
