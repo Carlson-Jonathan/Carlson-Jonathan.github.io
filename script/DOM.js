@@ -46,7 +46,8 @@ function removeItem() {
     var
         selection = document.getElementById("topicid").value,
         list = determineList();
-        
+        alert(list.childNodes[0].innerHTML);    
+    
     // Iterates through a ul list by id, detects a match, the removes it.
     if(detectItem(selection)) {
         for(i = 0, length = list.getElementsByTagName("li").length; i <
