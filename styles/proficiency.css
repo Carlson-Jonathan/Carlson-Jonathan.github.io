@@ -81,13 +81,26 @@ input {
 }
 
 .column {
-  float: left;
-  width: 33.33%;
-  padding: 10px;
+    float: left;
+    width: 33.33%;
+    padding: 10px;
 }
 
 .row:after {
   content: "";
   display: table;
   clear: both;
+}
+
+div.line {
+    border-bottom: 5px solid darkgreen;
+    margin-top: 30px;
+}
+
+ul {
+    
+}
+
+li {
+    padding: 5px;
 }

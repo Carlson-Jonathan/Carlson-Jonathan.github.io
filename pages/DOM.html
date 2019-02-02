@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="DOM" content="width=device-width, initial-scale=1">
+        <title>JavaScript Basics</title>
+        <meta name = "DOM Manipulation" content="CIT261 portfolio for Jonathan Carlson.">
+        <link rel="../stylesheet" href="../styles/normalize.css">
+        <link id="styles" rel="stylesheet" href="../styles/proficiency.css">
+    </head>
+    
+    <body>
+        <h1>
+           JavaScript - DOM Manipulation using createElement, 
+            appendChild, insertBefore, removeChild, etc.
+        </h1> 
+            
+        <br><h3>Below is a list of CIT261 fluency catagories. Use the controls the bottom to create your own fluency achievment sheet.</h3>
+        
+        <div class="line"></div> <br>
+
+        <div class="row">
+            <div class="column">    
+                <h2><big><u><i>Basic</i></u></big><br>Fluency Achievements</h2>
+                <ul id="basic">
+ 
+                </ul>
+            </div>
+
+            <div class="column">    
+                <h2><big><u><i>Working</i></u></big>
+                <br>Fluency Achievements:</h2>
+                <ul id="working">
+
+                </ul>
+            </div>
+
+            <div class="column">    
+                <h2><big><u><i>Skilled</i></u></big><br>Fluency Achievements:</h2>
+                <ul id="skilled">
+
+                </ul>
+            </div>  
+        </div>
+        
+        <div class="line"></div><br>
+        
+        <div class="row">
+            
+            <!-------------------------------------------------------------------------------------
+            - The radio button menu that determines the column that - will be updated
+            -------------------------------------------------------------------------------------->
+            <div class="column"> 
+                <h2 style="margin: 0 0 10px 0">Select Fluency Level to Edit:</h2>
+                <input type="radio" class="radio" name="prof" value="basic" style="float: left"><h3>Basic Fluency</h3>
+                <input type="radio" class="radio" name="prof" value="working" style="float: left"><h3>Working Fluency</h3>
+                <input type="radio" class="radio" name="prof" value="skilled" style="float: left"><h3>Skilled Fluency</h3>.
+            </div>
+            
+            <!-------------------------------------------------------------------------------------
+            - The drop-down menu from which the user selects a topic
+            -------------------------------------------------------------------------------------->
+            <div class="column">
+                <h2 style="margin: 0 0 10px 0">Select Topic:</h2>
+                <select name="proficiency" id="topicid">
+                    <option id="basic" value="JavaScript Basics">JavaScript Basics</option>
+                    <option id="Working" value="JavaScript Objects">JavaScript Objects</option>
+                    <option id="Skilled">JSON, Parse, and Stringify</option>
+                    <option id="Skilled">AJAX requesting a JSON file</option>  
+                    <option id="Skilled">XMLHTTP Requests and JSON Web Services</option>
+                    <option id="Skilled">Storing and Retrieving Simple Data...</option>
+                    <option id="Skilled">JS Manipulating CSS Class Properties</option>
+                    <option id="Skilled">Designing, Defining, and Triggering CSS3 Animations</option>
+                    <option id="Skilled">Designing, Defining, and Triggering CSS3 Transforms</option>
+                    <option id="Skilled">JS Creating CSS3 Transitions and Animations</option>
+                    <option id="Skilled">DOM list Manipulation</option>
+                    <option id="Skilled">HTML5 Tags - Audio, Video, and Canvas</option>
+                    <option id="Skilled">JavaScript Events, Animations and Transitions</option> 
+                </select>  
+            </div>
+            
+            <!-------------------------------------------------------------------------------------
+            - Buttons that execute functions 
+            -------------------------------------------------------------------------------------->
+            <div class="column">
+                <h2 style="margin: 0 0 10px 0">Select Action:</h2>
+                <button type="button" onclick="appendItem()">Add Item</button>
+                <button type="button" onclick="removeItem()">Remove Item</button>
+                <button type="button" onclick="saveSheet()">Save Page</button><br>
+                <button type="button" onclick="localStorage.clear()">Clear Page</button> 
+                Press 'F5' after click (no undo)
+            </div>
+        </div>
+
+        <script src="../script/DOM.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        
+    </body>    
+
+    <footer>            
+        <p>&copy; 2019 &#9670; Jonathan Carlson &#9670; Huntsville Alabama &#9670; <a href="">Car99020@BYUI.edu</a></p>
+    </footer>
+
+</html>
