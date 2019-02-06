@@ -1,0 +1,115 @@
+* { margin: 0; box-sizing: border-box; }
+
+body {
+    margin: 35px;
+    background-color: aliceblue;
+}
+
+h1 {
+    font-size: 3.25em;
+    color: darkblue;
+}
+
+h2 {
+    border-radius: 10px;
+    margin: 20px 25px 0;
+    font-family: arial;
+    padding: 10px;
+}
+
+h3 {
+    color: red;
+    margin: auto;
+}
+
+h3.paragraph {
+}
+
+.fontstyle {
+    background-color: blue;
+    color: yellow;
+}
+
+h4 {
+}
+
+p {
+}
+
+.indent {
+}
+
+main {
+}
+
+footer {
+}
+
+button {
+    height: 30px;
+    width: 250px;
+    margin: 20px;
+    background: blue;
+    color: yellow;
+    border-radius: 10px;
+    box-shadow: 5px 5px black;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+select {
+    padding: 5px;
+    font-size: 1em;
+    background-color: lightblue;
+}
+
+input {
+    font-size: 3em;
+    float: left;
+}
+
+ul {
+    padding: 10px;
+    margin: 0 50px;
+    border: solid blue 2px;
+    list-style-type: none;
+    background-color: lightblue;
+}
+
+li:hover {
+    background-color: blue;
+    color: yellow;
+}
+
+li {
+    padding: 3px;
+    font-size: 1.25em;
+}
+
+footer {
+    font-size: 1.25em; 
+    padding: 50px;
+    border: solid 5px darkblue;
+    box-shadow: 5px 5px black;
+}
+
+input.radio {
+    float: left;
+    width: 10%;
+    padding: 30px;
+}
+
+input.radio:after {
+  content: "";
+  clear: both;
+}
+
+div.line {
+}
+
+ul {
+    
+}
+
+li {
+}

@@ -3,19 +3,21 @@
     <head>
         <meta charset="utf-8">
         <meta name="DOM" content="width=device-width, initial-scale=1">
-        <title>DOM Manipulation</title>
-        <meta name = "DOM Manipulation" content="CIT261 portfolio for Jonathan Carlson.">
+        <title>Manipulating CSS</title>
+        <meta name = "CSS Manipulation" content="CIT261 portfolio for Jonathan Carlson.">
         <link rel="../stylesheet" href="../styles/normalize.css">
         <link id="styles" rel="stylesheet" href="../styles/proficiency.css">
+        <link rel="stylesheet" id="styles" 
+          href="https://fonts.googleapis.com/css?family=Tangerine">
     </head>
     
     <body>
-        <h1>
-           JavaScript - DOM Manipulation using createElement, 
-            appendChild, insertBefore, removeChild, etc.
-        </h1> 
+        
+        <h1 class="heading">
+           Manipulating CSS Class Properties Using JavaScript
+            </h1>
             
-        <br><h3>Below is a list of CIT261 fluency catagories. Use the controls the bottom to create your own fluency achievment sheet.</h3>
+        <br><h3>Below is a list of CIT261 fluency catagories. Use the controls the bottom to create your own fluency achievment sheet.<br><i>Note: The original JavaScript has been removed so I could pre-fill some categories in order to demonstrate CSS manipulation.</i></h3>
         
         <div class="line"></div> <br>
 
@@ -24,24 +26,46 @@
         -------------------------------------------------------------------------------------->
         <div class="row">
             <div class="column">    
-                <h2><big><u><i>Basic</i></u></big><br>Fluency Achievements</h2>
+                <h2 class="fontstyle"><big><u><i>Basic</i></u></big><br>Fluency Achievements</h2>
                 <ul id="basic">
- 
+                    <li>Designing, Defining, and Triggering CSS3 Animations</li>
+                    <li>Designing, Defining, and Triggering CSS3 Transforms</li>
+                    <li>DOM list Manipulation</li>
+                    <li>HTML5 Tags - Audio, Video, and Canvas</li>
+                    <li>JavaScript Basics</li>
+                    <li>JavaScript Events, Animations and Transitions</li>
+                    <li>JavaScript Objects</li>
+                    <li>JS Creating CSS3 Transitions and Animations</li>
+                    <li>JS Manipulating CSS Class Properties</li>
+                    <li>JSON, Parse, and Stringify</li>
+                    <li>Storing and Retrieving Simple Data...</li>
+                    <li>XMLHTTP Requests and JSON Web Services</li>
                 </ul>
             </div>
 
             <div class="column">    
-                <h2><big><u><i>Working</i></u></big>
+                <h2 class="fontstyle"><big><u><i>Working</i></u></big>
                 <br>Fluency Achievements:</h2>
                 <ul id="working">
-
+                    <li>JavaScript Basics</li>
+                    <li>JavaScript Events, Animations and Transitions</li>
+                    <li>JavaScript Objects</li>
+                    <li>JS Creating CSS3 Transitions and Animations</li>
+                    <li>JS Manipulating CSS Class Properties</li>
+                    <li>JSON, Parse, and Stringify</li>
+                    <li>Storing and Retrieving Simple Data...</li>
+                    <li>XMLHTTP Requests and JSON Web Services</li>
                 </ul>
             </div>
 
             <div class="column">    
-                <h2><big><u><i>Skilled</i></u></big><br>Fluency Achievements:</h2>
+                <h2 class="fontstyle"><big><u><i>Skilled</i></u></big><br>Fluency Achievements:</h2>
                 <ul id="skilled">
-
+                    <li>JavaScript Basics</li>
+                    <li>JavaScript Events, Animations and Transitions</li>
+                    <li>JavaScript Objects</li>
+                    <li>JS Creating CSS3 Transitions and Animations</li>
+                    <li>JS Manipulating CSS Class Properties</li>
                 </ul>
             </div>  
         </div>
@@ -87,16 +111,34 @@
             -------------------------------------------------------------------------------------->
             <div class="column">
                 <h2 style="margin: 0 0 10px 0">Select Action:</h2>
-                <button type="button" onclick="appendItem()">Add Item</button>
-                <button type="button" onclick="removeItem()">Remove Item</button>
-                <button type="button" onclick="saveSheet()">Save Page</button><br>
-                <button type="button" onclick="localStorage.clear()">Clear Page</button> 
+                <button type="button" onclick="appendItem() class="lineup"">Add Item</button>
+                <button type="button" onclick="removeItem()" class="lineup">Remove Item</button>
+                <button type="button" onclick="saveSheet()" class="lineup">Save Page</button><br>
+                <button type="button" onclick="localStorage.clear()" class="lineup">Clear Page</button> 
                 Press 'F5' after click (no undo)
             </div>
         </div>
+        
+        <div class="line"></div><br>
+            <!-------------------------------------------------------------------------------------
+            - CSS Manipulation buttons 
+            -------------------------------------------------------------------------------------->        
+        
+        <button type="button" onclick="changeHeading()">Change Heading Background</button>
+        
+        <button type="button" onclick="changeh2()">Change All h2 Font</button>
+        
+        <button type="button" onclick="align()">Float Buttons Right</button>
+        
+        <button type="button" onclick="document.getElementById('styles').href='../styles/cssChange2.css'">Change Entire CSS Sheet (refresh first)</button>
+        
+        <div class="line"></div><br>
+        
 
-        <script src="../script/DOM.js"></script>
+        <script src="../script/csschange.js"></script>
+        
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        
         
     </body>    
 

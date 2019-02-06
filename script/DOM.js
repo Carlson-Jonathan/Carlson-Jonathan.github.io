@@ -12,6 +12,7 @@
 *      5.) Optionally saves/loads to local storage. Loads storage on page load.
 ******************************************************************************/
 
+"use strict"
 
 /******************************************************************************
 * appendItem()  
@@ -49,7 +50,7 @@ function removeItem() {
     
     // Iterates through a ul list by id, detects a match, the removes it.
     if(detectItem(selection)) {
-        for(i = 0, length = list.getElementsByTagName("li").length; i <
+        for(var i = 0, length = list.getElementsByTagName("li").length; i <
             length; i++) {
             if(list.childNodes[i].innerHTML == selection) {
                 list.removeChild(list.childNodes[i]);
@@ -67,12 +68,14 @@ function removeItem() {
 * "skilled".
 ******************************************************************************/
 function determineList() {
-    var profLevel = document.getElementsByClassName("radio");
-    var radioIDValue;
+    var profLevel = document.getElementsByClassName("radio"),
+        radioIDValue, 
+        list;
+    
     for(var i = 0, length = profLevel.length; i < length; i++) {
         if(profLevel[i].checked) {
             radioIDValue = profLevel[i].value,
-                list = document.getElementById(radioIDValue);
+               list = document.getElementById(radioIDValue);
             break;
         }
     }  
