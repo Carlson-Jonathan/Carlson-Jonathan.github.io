@@ -21,10 +21,13 @@
 ******************************************************************************/
 function myAJAX() {
     var xhttp = new XMLHttpRequest();
-
+    var stringData;
+    
     xhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
-          document.getElementById("output").innerHTML = this.responseText;
+            document.getElementById("output").innerHTML = this.responseText;
+            stringData = JSON.parse(this.responseText);
+            document.getElementById("objoutput").innerHTML = stringData[0];
         }
     };
 
@@ -34,11 +37,13 @@ function myAJAX() {
     //xhttp.setRequestHeader('User-Agent', 'my email');
 
     xhttp.send();
+    return stringData;
 }
 
 function createFamily() {
-    var myFamily = JSON.parse(myAJAX());
     
+    var myFamily = JSON.parse((myAJAX()));
+    //document.getElementById("objoutput").innerHTML = myFamily;
     
 }
 
