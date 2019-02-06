@@ -19,18 +19,27 @@
 * This function adds a selected topic from the drop-down to the column selected
 * by the radio button. Executed by button click.
 ******************************************************************************/
-function loadJoke() {
+function myAJAX() {
     var xhttp = new XMLHttpRequest();
 
     xhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
-          document.getElementById("joke").innerHTML = this.responseText;
+          document.getElementById("output").innerHTML = this.responseText;
         }
     };
 
-    xhttp.open('GET', '../other/ajax.json', true);
-    xhttp.setRequestHeader('Accept', 'text/plain');
-    xhttp.setRequestHeader('User-Agent', 'my email');
+    xhttp.open('GET', 'https://carlson-jonathan.github.io/other/ajax.json', true);
+    
+    //xhttp.setRequestHeader('Accept', 'text/plain');
+    //xhttp.setRequestHeader('User-Agent', 'my email');
 
     xhttp.send();
 }
+
+function createFamily() {
+    var myFamily = JSON.parse(myAJAX());
+    
+    
+}
+
+
