@@ -1,0 +1,38 @@
+[
+    {
+    "name": "Jon",
+    "age": "38",
+    "sex": "male",
+    "favFood": "sushi";
+    },
+    {
+    "name": "Shannon",
+    "age": "37",
+    "sex": "female",
+    "favFood": "french fries";
+    },
+    {
+    "name": "Ella",
+    "age": "12",
+    "sex": "female",
+    "favFood": "icecream";
+    },    
+    {
+    "name": "Wesley",
+    "age": "9",
+    "sex": "male",
+    "favFood": "bacon";
+    },
+    {
+    "name": "James",
+    "age": "5",
+    "sex": "male",
+    "favFood": "candy";
+    },
+    {
+    "name": "Evie",
+    "age": "1",
+    "sex": "female",
+    "favFood": "bottle";
+    },
+]
