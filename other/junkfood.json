@@ -5,7 +5,7 @@
     "Shape": "round",
     "Content": "beef",
     "Purchase": "McDonalds",
-    "Price" : "$2.00"    
+    "Price" : "cheap"    
     },
     {
     "-------": "----------------------",
@@ -13,6 +13,15 @@
     "Appearance": "colorful",
     "Contents": "everything",
     },
+    {
+    "-------": "----------------------",        
+    "Food": "sushi",
+    "Contents": "salmon",
+    "Price": "Expensive",
+    "Availability": "rare",
+    "Location" : "Japan",
+    "Taste": "delicious"    
+    }, 
     {
     "-------": "----------------------",
     "Food": "tacos",

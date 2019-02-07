@@ -1,0 +1,42 @@
+[
+    {
+    "-------":"--------------------------",
+    "Name": "Infinity Wars",
+    "Rating": "PG-13",
+    "Review": "Awesome!",
+    "Released": "A few months ago",
+    "Length" : "Over 2 hours"    
+    },
+    {
+    "-------":"--------------------------",
+    "Name": "Citizen Cain",
+    "Rating": "PG?",
+    "Review": "Boring",
+    "Released": "Decades ago",
+    "Length" : "too long"    
+    },
+    {
+    "-------":"--------------------------",
+    "Name": "Wizard of Oz",
+    "Rating": "G",
+    "Review": "Classic",
+    "Released": "When color happended",
+    "Length" : "?"    
+    },
+    {
+    "-------":"--------------------------",
+    "Name": "Harry Potter",
+    "Rating": "PG-13",
+    "Review": "Meh",
+    "Released": "Lots of times",
+    "Length" : "8 movies? :P"    
+    },
+    {
+    "-------":"--------------------------",
+    "Name": "Pirates of the Carribean",
+    "Rating": "PG-13",
+    "Review": "Great! (but not the sequals)",
+    "Released": "2002ish?",
+    "Length" : "Pretty long"    
+    }   
+]
