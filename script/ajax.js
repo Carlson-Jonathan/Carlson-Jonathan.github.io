@@ -26,16 +26,14 @@ function myAJAX() {
     xhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
             
-            // Parse Data
+            // Parse Data and display
             rawData = this.responseText;
             var jsonString = JSON.parse(rawData);
-            
-            display(jsonString)
+            display(jsonString);
         }
     };
 
     // Website where the data is extracted from. 
-    
     xhttp.open('GET', site, true);
     xhttp.send();
 }

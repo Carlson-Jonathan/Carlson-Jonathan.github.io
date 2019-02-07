@@ -11,45 +11,50 @@
     </head>
 
     <body>
-        
+
+        <!-------------------------------------------------------------------------------------
+        - Header and site information
+        -------------------------------------------------------------------------------------->
         <h1>
            JavaScript - AJAX requesting a JSON file
         </h1>   
         
         <h3> This assignment demonstrates AJAX and JSON. Instead of simply calling 
             a basic JSON string and displaying it back, I chose to create
-            a more complex array of objects and display it back just to see if I
-            could. I had a bit of difficulty with this one and wasn't able to
+            more complex arrays of objects which are displayed back (just to see if I
+            could). I had a bit of difficulty with this one and wasn't able to
             implement all the features I wanted to include. Nevertheless, I
             feel I have come to understand this topic well.
+        
+        <!-------------------------------------------------------------------------------------
+        - The web links with their text information
+        -------------------------------------------------------------------------------------->
         </h3>
-        <h3>The "Get Data" button below retrieves a string from a <a href="https://carlson-jonathan.github.io/other/ajax.json">JSON file</a> that I uploaded to my 
-            website and displays back the key and the value of each property of 
-            each object in the array. This file represents my family members.</h3>
-
-        <input type="input" id="userinput" placeholder="Enter website" style="size: 300">
+        <a href="https://carlson-jonathan.github.io/other/movies.json" style="margin: 20px 50px">
+            https://carlson-jonathan.github.io/other/movies.json</a>
+        <br><a href="https://carlson-jonathan.github.io/other/myfamily.json" style="margin: 20px 50px">
+        https://carlson-jonathan.github.io/other/myfamily.json</a>
+        <br><a href="https://carlson-jonathan.github.io/other/activities.json" style="margin: 20px 50px">
+        https://carlson-jonathan.github.io/other/activities.json</a><br><br>
         
+        <h3>Copy and paste one of the above web addresses into the input box. The "Get Data" 
+            button below retrieves the string and parses it from the JSON file. It will then 
+            be displayed back as a 'key-value' output. Click the link to view the content of 
+            the .json files. </h3>
+
+        <!-------------------------------------------------------------------------------------
+        - Where the magic happens. The input box, button, and output div.
+        -------------------------------------------------------------------------------------->
+        <input type="input" id="userinput" placeholder="Enter website" style="size: 300">    
         <button type="button" onclick="myAJAX()">Get Data</button>
-
         <div id="outputone"></div>
-        
-        <div class="row">
-            <div class="column">
-            </div>
-                
-            <div class="column">
-            </div>
-                                
-            <div class="column">
-            </div>
-        </div>
  
-
         <script src="../script/ajax.js"></script>
     </body>
     
     <footer>            
-        <p>&copy; 2019 &#9670; Jonathan Carlson &#9670; Huntsville Alabama &#9670; <a href="">Car99020@BYUI.edu</a></p>
+        <p>&copy; 2019 &#9670; Jonathan Carlson &#9670; Huntsville Alabama &#9670; <a href="">
+            Car99020@BYUI.edu</a></p>
     </footer>
     
 
