@@ -14,14 +14,6 @@
     "Contents": "everything",
     },
     {
-    "-------": "----------------------",        
-    "Food": "sushi",
-    "Contents": "salmon",
-    "Price": "Expensive",
-    "Availability": "rare",
-    "Taste": "delicious"    
-    }, 
-    {
     "-------": "----------------------",
     "Food": "tacos",
     "Age": "stale",
