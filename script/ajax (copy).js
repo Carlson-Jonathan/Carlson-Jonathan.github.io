@@ -19,7 +19,6 @@ function myAJAX() {
     
     // Set Variables
     var xhttp = new XMLHttpRequest(),
-        site = document.getElementById("userinput").value,
         dad, mom, daughter1, daughter2, son1, son2, rawData;
     
     // Request Data
@@ -35,8 +34,7 @@ function myAJAX() {
     };
 
     // Website where the data is extracted from. 
-    
-    xhttp.open('GET', site, true);
+    xhttp.open('GET', 'https://carlson-jonathan.github.io/other/ajax.json', true);
     xhttp.send();
 }
 

@@ -1,0 +1,38 @@
+[
+    {
+    "---":"----------------------",
+    "Food": "burger",
+    "Shape": "round",
+    "Content": "beef",
+    "Purchase": "McDonalds",
+    "Price" : "$2.00"    
+    },
+    {
+    "---":"----------------------",
+    "Food": "pizza",
+    "Appearance": "colorful",
+    "Contents": "everything",
+    },
+    {
+    "---":"----------------------",        
+    "Food": "sushi",
+    "Contents": "salmon",
+    "Price": "Expensive",
+    "Availability": "rare",
+    "Location" : "Japan",
+    "Taste": "delicious"    
+    }, 
+    {
+    "---":"----------------------",
+    "Food": "tacos",
+    "Age": "stale",
+    "Location": "theBorder",
+    "Other": "needSalsa"
+    },
+    {
+    "---":"----------------------",    
+    "Food": "soup",
+    "Content": "water",
+    "Taste": "salty"
+    }
+]

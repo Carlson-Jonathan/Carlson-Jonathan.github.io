@@ -3,36 +3,36 @@
     "name": "Jon",
     "age": "38",
     "sex": "male",
-    "favFood": "sushi"
+    "favoriteFood": "sushi"
     },
     {
     "name": "Shannon",
     "age": "37",
     "sex": "female",
-    "favFood": "french fries"
+    "favoriteFood": "french fries"
     },
     {
     "name": "Ella",
     "age": "12",
     "sex": "female",
-    "favFood": "icecream"
+    "favoriteFood": "icecream"
     },    
     {
     "name": "Wesley",
     "age": "9",
     "sex": "male",
-    "favFood": "bacon"
+    "favoriteFood": "bacon"
     },
     {
     "name": "James",
     "age": "5",
     "sex": "male",
-    "favFood": "candy"
+    "favoriteFood": "candy"
     },
     {
     "name": "Evie",
     "age": "1",
     "sex": "female",
-    "favFood": "bottle"
+    "favoriteFood": "bottle"
     }
 ]

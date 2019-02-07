@@ -4,8 +4,8 @@
     <head>
         <meta charset="utf-8">
         <meta name="resume" content="width=device-width, initial-scale=1">
-        <title>JavaScript Basics</title>
-        <meta name = "JS - Conditionals, Functions, Variables, Parameters, Arrays, Associative Arrays" content="CIT261 portfolio for Jonathan Carlson.">
+        <title>AJAX + JSON</title>
+        <meta name = "JavaScript demonstration of AJAX calling JSON files.">
         <link rel="../stylesheet" href="../styles/normalize.css">
         <link id="styles" rel="stylesheet" href="../styles/proficiency.css">
     </head>
@@ -16,12 +16,23 @@
            JavaScript - AJAX requesting a JSON file
         </h1>   
         
-        <h3> Assignment description. </h3>
+        <h3> This assignment demonstrates AJAX and JSON. Instead of simply calling 
+            a basic JSON string and displaying it back, I chose to create
+            a more complex array of objects and display it back just to see if I
+            could. I had a bit of difficulty with this one and wasn't able to
+            implement all the features I wanted to include. Nevertheless, I
+            feel I have come to understand this topic well.
+        </h3>
+        <h3>The "Get Data" button below retrieves a string from a <a href="https://carlson-jonathan.github.io/other/ajax.json">JSON file</a> that I uploaded to my 
+            website and displays back the key and the value of each property of 
+            each object in the array. This file represents my family members.</h3>
 
-        <h2 id="output"> String Gets Displayed Here </h2>
-        <button type="button" onclick="createFamily()">Get Local Data</button>
-        <h2 id="objoutput"> String Gets Displayed Here </h2>
+        <input type="input" id="userinput" placeholder="Enter website" style="size: 300">
+        
+        <button type="button" onclick="myAJAX()">Get Data</button>
 
+        <div id="outputone"></div>
+        
         <div class="row">
             <div class="column">
             </div>
