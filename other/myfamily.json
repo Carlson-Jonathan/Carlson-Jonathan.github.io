@@ -1,38 +1,44 @@
 [
     {
-    "name": "Jon",
-    "age": "38",
-    "sex": "male",
-    "favoriteFood": "sushi"
+    "-------":"--------------------------",
+    "Name": "Jon",
+    "Age": "38",
+    "Sex": "male",
+    "FavoriteFood": "sushi"
     },
     {
-    "name": "Shannon",
-    "age": "37",
-    "sex": "female",
-    "favoriteFood": "french fries"
+    "-------":"--------------------------",
+    "Name": "Shannon",
+    "Age": "37",
+    "Sex": "female",
+    "FavoriteFood": "french fries"
     },
     {
-    "name": "Ella",
-    "age": "12",
-    "sex": "female",
-    "favoriteFood": "icecream"
+    "-------":"--------------------------",
+    "Name": "Ella",
+    "Age": "12",
+    "Sex": "female",
+    "FavoriteFood": "icecream"
     },    
     {
-    "name": "Wesley",
-    "age": "9",
-    "sex": "male",
-    "favoriteFood": "bacon"
+    "-------":"--------------------------",
+    "Name": "Wesley",
+    "Age": "9",
+    "Sex": "male",
+    "FavoriteFood": "bacon"
     },
     {
-    "name": "James",
-    "age": "5",
-    "sex": "male",
-    "favoriteFood": "candy"
+    "-------":"--------------------------",
+    "Name": "James",
+    "Age": "5",
+    "Sex": "male",
+    "FavoriteFood": "candy"
     },
     {
-    "name": "Evie",
-    "age": "1",
-    "sex": "female",
-    "favoriteFood": "bottle"
+    "-------":"--------------------------",
+    "Name": "Evie",
+    "Age": "1",
+    "Sex": "female",
+    "FavoriteFood": "bottle"
     }
 ]
