@@ -1,42 +1,42 @@
 [
     {
     "-------":"--------------------------",
-    "Name": "Infinity Wars",
-    "Rating": "PG-13",
-    "Review": "Awesome!",
-    "Released": "A few months ago",
-    "Length" : "Over 2 hours"    
+    "Name": "Biking",
+    "Physical?": "yes",
+    "Fun": "Depends where you go",
+    "Location": "Outside",
+    "Length" : "Up to you"    
     },
     {
     "-------":"--------------------------",
-    "Name": "Citizen Cain",
-    "Rating": "PG?",
-    "Review": "Boring",
-    "Released": "Decades ago",
-    "Length" : "too long"    
+    "Name": "Watching TV",
+    "Physical?": "No",
+    "Fun": "Depends what is showing",
+    "Location": "Couch",
+    "Length" : "Are you a potato?"    
     },
     {
     "-------":"--------------------------",
-    "Name": "Wizard of Oz",
-    "Rating": "G",
-    "Review": "Classic",
-    "Released": "When color happended",
-    "Length" : "?"    
+    "Name": "mini-golf",
+    "Physical": "Sorta",
+    "Fun": "Meh",
+    "Location": "Golf course",
+    "Length" : "About 1.5 hours"    
     },
     {
     "-------":"--------------------------",
-    "Name": "Harry Potter",
-    "Rating": "PG-13",
-    "Review": "Meh",
-    "Released": "Lots of times",
-    "Length" : "8 movies? :P"    
+    "Name": "Bowling",
+    "Physical": "sure",
+    "Fun": "Only if you don't gutter",
+    "Location": "Bowling alley",
+    "Length" : "2 hours?"    
     },
     {
     "-------":"--------------------------",
-    "Name": "Pirates of the Carribean",
-    "Rating": "PG-13",
-    "Review": "Great! (but not the sequals)",
-    "Released": "2002ish?",
-    "Length" : "Pretty long"    
+    "Name": "Vandalism",
+    "Physical": "If you get chased",
+    "Fun": "Weeeeeeeeeeeeeee!",
+    "Location": "Bro Eddington's Car",
+    "Length" : "Until it is pretty"    
     }   
 ]
