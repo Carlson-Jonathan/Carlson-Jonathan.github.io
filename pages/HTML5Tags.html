@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="HTML5 Tags" content="width=device-width, initial-scale=1">
+        <title>DOM Manipulation</title>
+        <meta name = "HTML5 Tags" content="CIT261 portfolio for Jonathan Carlson.">
+        <link rel="../stylesheet" href="../styles/normalize.css">
+        <link id="styles" rel="stylesheet" href="../styles/proficiency.css">
+    </head>
+    
+    <header>
+        <h1>
+        HTML5 Tags - Video, Audio, and Canvas
+        </h1>
+    </header>
+    
+    <body>
+            
+        <h2 style="text-align: center; margin-top: 30px">My Hobbies and Talents<br>Some 
+            interesting things about me can be shown in the below video and audio 
+        clips. </h2>
+        
+        <div class="line"></div> <br>
+
+        <!-------------------------------------------------------------------------------------
+        - Far left column: HTML5 Video example
+        -------------------------------------------------------------------------------------->
+        
+        <div class="row">
+            <div class="column" style="height: 150%">    
+                <h3>The video is of me performing on the stage of the
+                    cruise ship I was on during week 2. This is called "contact juggling". The 
+                    ball is made of clear acrylic and is actually quite heavy. This required 
+                    many months of practice to balance and isolate the ball to achieve the 
+                    illusion.</h3>
+                  
+                <video id="video1" width="100%" onclick="playPause()" controls>
+                    <source src="../other/contactJuggling.mp4" type="video/mp4">
+                    Your browser does not support HTML5 video.
+                  </video>
+
+            </div>
+            
+        <!-------------------------------------------------------------------------------------
+        - Middle column: HTML5 Audio example
+        -------------------------------------------------------------------------------------->
+
+            <div class="column" id="centercolumn">  
+                <h3>As a hobby, I enjoy making music. When I was young, my older brother 
+                    introduced me to a tracker software program that I created many techno 
+                    style songs with. I have written dozens of songs in programs like Impulse 
+                    Tracker and FL Studio. Below are some of my favorites:<br><br><br>Paradise 
+                    Beach</h3>
+                <audio controls>
+                    <source src="../other/Paradise%20Beach.mp3" type="audio/mpeg">
+                </audio>
+                
+                <h3>Ethereal Strings</h3>
+                <audio controls>
+                    <source src="../other/Ethereal%20Strings.mp3" type="audio/mpeg">
+                </audio>
+                
+                <h3>Cosmic Cruise</h3>
+                <audio controls>
+                    <source src="../other/CosmicCruise.mp3" type="audio/mpeg">
+                </audio>
+                
+                <h3>Unnamed</h3>
+                <audio controls>
+                    <source src="../other/Jon%2017.mp3" type="audio/mpeg">
+                </audio>
+                
+                <h3>Whispering Mist</h3>
+                <audio controls>
+                    <source src="../other/Jon16.4.mp3" type="audio/mpeg">
+                </audio>
+
+            </div>
+        
+        <!-------------------------------------------------------------------------------------
+        - Far right column: HTML5 Canvas example
+        -------------------------------------------------------------------------------------->
+            
+            <div class="column">    
+            
+                <h3>Here are some American flags that I created using HTML5 canvas. 
+                    The stars and stripes are each created in their own function 
+                    definitions. Then each function is called in loop sequences 
+                    to draw them to different places on the canvas.</h3>
+            
+                <canvas id="flagone" height="200" width="350px"
+                style="border:1px solid #c3c3c3;">
+                </canvas>
+                
+                <canvas id="flagtwo" height="200" width="350px"
+                style="border:1px solid #c3c3c3;">
+                </canvas>     
+                
+                <canvas id="flagthree" height="200" width="350px"
+                style="border:1px solid #c3c3c3;">
+                </canvas>             
+
+            </div>  
+        </div>
+        
+        <script src="../script/HTML5.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        
+    </body>    
+
+    <footer>            
+        <p>&copy; 2019 &#9670; Jonathan Carlson &#9670; Huntsville Alabama &#9670; 
+            <a href="">Car99020@BYUI.edu</a></p>
+    </footer>
+
+</html>

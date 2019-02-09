@@ -25,7 +25,7 @@ h2 {
 
 h3 {
     font-family: Arial;
-    margin: 0 0px 20px 50px;
+    margin: 20px 50px;
 }
 
 h3.paragraph {
@@ -86,6 +86,13 @@ input {
     padding: 10px;
 }
 
+#centercolumn {
+    background-color: darkgreen;
+    color: lightgreen;
+    height: 1000px;
+    border-radius: 20px;
+}
+
 .row:after {
   content: "";
   display: table;
@@ -108,4 +115,23 @@ ul {
 
 li {
     padding: 5px;
+}
+
+canvas {
+    
+}
+
+video {
+    border-radius: 30px;
+    border: solid #455347 15px;
+}
+
+audio {
+    border-radius: 10px;
+    margin: 0 50px 30px;;
+    text-align: center;
+}
+
+canvas {
+    margin: 20px 50px;
 }
