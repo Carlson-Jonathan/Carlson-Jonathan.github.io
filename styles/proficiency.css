@@ -135,3 +135,8 @@ audio {
 canvas {
     margin: 20px 50px;
 }
+
+iframe {
+    border: solid #455347 15px;
+    border-radius: 30px;
+}
