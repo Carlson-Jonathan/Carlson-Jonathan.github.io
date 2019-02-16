@@ -1,0 +1,140 @@
+* { margin: 0; box-sizing: border-box; }
+
+body {
+    margin: auto;
+    background-color: #e6ffe6;
+}
+
+h1 {
+    display: block;
+    text-align: center;
+    margin: 0px auto 0;
+    background-color: darkgreen;
+    color: lightgreen;
+    font-size: 2em;
+    padding: 20px;
+}
+
+h2 {
+    text-align: left;
+    color: #003300;
+    font-size: 1.25em;
+    font-family: Arial;
+    margin: 0 0 0 25px;
+}
+
+h3 {
+    font-family: Arial;
+    margin: 20px 50px;
+}
+
+h3.paragraph {
+    margin: auto; 
+    padding: 15px;
+}
+
+h4 {
+    font-size: 1.5em;
+    float: left;
+    width: 33%;
+    margin: 0 60px 20px 25px;
+    color: #003300;
+}
+
+main {
+    background-color: #ccffcc;
+    background: rgb(120, 200, 120);
+    box-shadow: 12px 12px 5px #444444;
+}
+
+footer {
+    background-color: darkgreen;
+    padding: 40px;
+    color: lightgreen;
+    //border-radius: 0 0 40px 40px;
+    box-shadow: 12px 12px 5px #444444;
+    text-align: center;
+    animation: 1s ease-out 0s 1 slideInFromRight;
+}
+
+div.grow {
+    font-size: 3em;
+    text-align: center;
+    padding: 25px;
+    transition: font-size 2s, color 2s, transform 1.5s;
+    width: 50%;
+    margin: auto;
+}
+
+div.grow:hover {
+    font-size: 5em;
+    color: red;
+    transform: rotate(-360deg);
+}
+
+body { 
+    background-color: ivory; 
+}
+    
+body {
+    background-color: ivory;
+}
+
+
+
+
+
+.bird {
+	background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/174479/bird-cells.svg);
+	background-size: auto 100%;
+	width: 352px;
+	height: 500px;
+	will-change: background-position;
+	animation-name: fly-cycle;
+	animation-duration: 1s;
+	animation-delay: -0.5s;
+	animation-timing-function: steps(10);
+	animation-iteration-count: infinite;
+}
+
+.bird-container {
+	position: fixed;
+	top: 30%;
+	left: 80%;
+	transform: translate(-50%,-50%);
+	will-change: transform;
+}
+
+@keyframes fly-cycle {
+	100% {
+		background-position: -3600px 0;
+	}
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+header {  
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+
+div.secret {
+    width: 300;
+    height: 150;
+    background: red;
+}
