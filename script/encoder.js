@@ -1,6 +1,41 @@
+/*****************************************************************************
+* Author: 
+*     Jonathan Carlson
+*
+* Program Description:
+*     This is a simple text encryption program that uses a basis subsitute
+*     cipher. This was made for academic purposes only and should not be
+*     used for actual security. 
+******************************************************************************/
+
 "use strict"
+
 /******************************************************************************
-* Variables used to scramble letters and symbols                              
+* Animation and view modifying functions.
+******************************************************************************/
+
+document.getElementsByClassName("boxarea").onfocus = function(){ focColor() };
+document.getElementsByClassName("boxarea").onblur = function(){ blurColor() };
+document.getElementById("input").onfocus = function(){ focColor() };
+document.getElementById("input").onblur = function(){ blurColor() };
+
+document.getElementById("encrypt").onclick = function(){ displayText() };
+document.getElementById("decrypt").onclick = function(){ decryptText() };
+
+
+function focColor() {
+    document.getElementById("input").style.backgroundColor = "#ffffcc";
+}
+
+function blurColor() {
+    document.getElementById("input").style.backgroundColor = "white";
+}
+
+
+
+/******************************************************************************
+* Variables used to scramble letters and symbols. Here is where you can find                   
+* the key to deciphering a scrambled text.           
 ******************************************************************************/
     
 var alphaScrambler = {a:1,b:"q",c:"a",d:"z",e:2,f:"w",g:"s",h:"x",i:"3",
@@ -30,7 +65,9 @@ var passPoint1;
 var passPoint2;
 
 /******************************************************************************    
-* Encrypting Functions                       
+* Encrypting Functions
+* I know that there are much simpler ways to encrypt text but I wanted to get a 
+* more hands-on experience by applying my own personalized cipher.
 ******************************************************************************/    
 
 function passwordPointer() {
@@ -40,12 +77,14 @@ function passwordPointer() {
 }
 
 function displayText() {
-    var password = document.getElementById("password").value;
+    
+    var password = document.getElementById("passwordleft").value;
     var passLen = password.length;
     var text = passLen + document.getElementById("input").value + password;
     text = text.toLowerCase();
     text = text.split("");
     var symbols;
+    
     for (var i in text) {
         symbols = grammer.indexOf(text[i]);
         if (symbols > -1) {  
@@ -104,7 +143,7 @@ function alphaConverter(text) {
 
 function decryptText() {
     var text = document.getElementById("decipher").value;
-    var passWord = document.getElementById("password").value;
+    var passWord = document.getElementById("passwordleft").value;
     var passPoint = passwordPointer();
     if (text.indexOf(passPoint1) > -1 & text.indexOf(passPoint2) > -1 &
         !passWord) {
@@ -125,5 +164,4 @@ function decryptText() {
         return 0;
     }
     document.getElementById("decoded").innerHTML = text;
-    //document.getElementById("debug").innerHTML = passWord + "<br>" + passSlice + "<br>" + passLen;
 }

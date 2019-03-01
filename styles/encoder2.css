@@ -1,0 +1,86 @@
+* { margin: 0; box-sizing: border-box; }
+
+body {
+    background-color: #cce6ff;
+}
+
+#pic {
+    position: absolute;
+    width: 100%;
+    height: 138px;
+    z-index: -1;
+}
+
+h1 {
+    color: #f2f2f2;
+    text-align: center;
+    font-size: 3.5em;
+    padding: 45px 0 30px;
+    margin: -10px 0 0;
+    line-height: 25px;
+}
+
+h2 {
+    font-size: 1.4em;
+    color: #4d4d4d;
+    margin: 50px 0 0 0;
+    height: 30px;
+    text-shadow: 2px 2px 15px darkgrey;
+}
+
+.boxarea {
+    height: 150px;
+    width: 400px;
+    margin: 20px auto;
+    font-size: 1.2em;
+    font-weight: bold;
+    box-shadow: #4d4d4d 3px 3px;
+    display: block;
+}
+
+#encryption, #decoded {
+    font-size: 0.75em;
+}
+
+button {
+    margin: 0 20px 0 50px;
+    padding: 10px;
+    font-size: 1.5em;
+    color: #4d4d4d;
+    box-shadow: black 3px 3px;
+    border-radius: 6px;
+    font-family: Times New Roman;
+}
+
+.password {
+    height: 50px;
+    width: 175px;
+    margin: 0;
+    font-weight: bold;
+    box-shadow: #4d4d4d 3px 3px;
+    padding: 7px;
+    color: grey;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+    float: left;
+    width: 33.3%;
+    padding: 10px;
+    text-align: center;
+}
+
+footer {
+    background-color: #00001a;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}

@@ -6,7 +6,7 @@
     margin-left: -10px;
 }
 
-.bar {
+h1 {
     color: #f2f2f2;
     text-align: center;
     font-size: 3.5em;
@@ -15,7 +15,7 @@
     line-height: 25px;
 }
 
-#input, #decipher {
+input, #decipher {
     text-align: center;
     height: 40px;
     width: 100%;
@@ -25,10 +25,10 @@
     box-shadow: #4d4d4d 3px 3px;
 }
 
-#showText {
-    font-size: 1em;
+h2 {
+    font-size: 2em;
     color: #4d4d4d;
-    margin: 0;
+    margin: 15px 0 0 0;
     text-align: center;
     height: 30px;
     text-shadow: 2px 2px 15px darkgrey;
@@ -52,9 +52,10 @@
     font-size: 1.6em;
     font-weight: bold;
     width: 80%;
+    padding: 50px;
 }
 
-.button {
+button {
     display inline-block;
     text-align: center;
     padding: 10px;

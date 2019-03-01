@@ -4,39 +4,61 @@
         <meta charset="utf-8">
         <meta name="homepage" content="width=device-width, initial-scale=1">
         <title>CIT261 Jonathan Carlson Encoder</title>
-        <meta name = "description" content="CIT261 Encoder.">
+        <meta name = "description" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="../styles/normalize.css">
-        <link id="styles" rel="stylesheet" href="../styles/encoder.css">
+        <link id="styles" rel="stylesheet" href="../styles/encoder2.css">
     </head>    
 
-    <body style="background-color: #e6e6ff;">
+    <header>
         <img src="../images/code.jpg" alt="picture is broken" id="pic">
-        <p class="bar">Text Coder<br><span style="font-size: 38%">Created by 
-            Jonathan Carlson</span></p>
-        <p id="showText" style="font-size: 2em; margin-top: 15px;">
-            Enter the text you would like to encrypt:</p>
-        <input type="text" id="input">
-        <div class="center">
-            <button class="button" onclick=displayText()>Click To Encrypt</button>
-            <input type="text" id="password" title=
-            "If a password is present when encrypting, the recipient of the 
-             message must enter the same password to decipher it." 
-            placeholder="Password (optional)">
-        </div>
-        <p id="encryption" style="font-size: 1em"></p>
-        <p id="showText" style="font-size: 2em; margin-top: 20px;">
-            Enter the text you would like deciphered:</p>
-        <input type="text" id="decipher" style="font-size: 1em; font-weight: normal">
-        <div class="center">
-            <button class="button" onclick=decryptText()>Click To Decipher </button>
-        </div>
-        <p id="decoded"></p>
-        <p id="debug"></p>
+        <h1>Text Coder<br>
+            <span style="font-size: 32.5%; font-family: Arial">Created by Jonathan Carlson</span>
+        </h1>
+    </header>
     
+    <body>
+        
+        <!---------------------------------------------------------------------
+        - Left Column - Encryption Items.
+        ---------------------------------------------------------------------->
+        <div class="row">
+            <div class="column"> 
+                <h2>
+                    Enter the text you would like to encrypt:
+                </h2>
+                <textarea name="Text1" cols="50" rows="5" type="text" class="boxarea" id="input"></textarea>
+                <button id="encrypt">Encrypt</button>
+                <input type="text" class="password" id="passwordleft" placeholder="Password (optional)">
+        
+                <textarea id="encryption" class="boxarea"></textarea>
+            </div>
+
+        <!---------------------------------------------------------------------
+        - Right Column - Deciphering Items.
+        ---------------------------------------------------------------------->            
+            <div class="column"> 
+                <h2>
+                    Enter the text you would like deciphered:
+                </h2>
+                <textarea name="Text2" cols="50" rows="5" type="text" class="boxarea" id="decipher"></textarea>
+                <button id="decrypt">Decipher</button>
+                <input type="text" class="password" id="passwordright" placeholder="Password (optional)">
+                
+                <textarea id="decoded" class="boxarea"></textarea>
+            </div>
+
+            <div class="column"> 
+                <h2>Cyber Securty News Feeds displayed with AJAX</h2>
+            </div>
+        
+        </div>
+        
+           
         <script src="../script/encoder.js"></script>
     </body>
 
     <footer>            
-        <p>&copy; 2019 &#9670; Jonathan Carlson &#9670; Huntsville Alabama &#9670; <a href="">Car99020@BYUI.edu</a></p>
+        <p>&copy; 2019 &#9670; Jonathan Carlson &#9670; Huntsville Alabama &#9670; <u>Car99020@BYUI.edu</u></p>
     </footer>
+    
 </html>

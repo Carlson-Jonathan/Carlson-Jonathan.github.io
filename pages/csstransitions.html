@@ -18,9 +18,9 @@
     
     <body>
         
-        <div class="grow">CSS Transitions</div>
+        <div class="grow"></div>
         <div class="secret"></div>
-        <div class="grow">are fun!</div>
+        <div class="grow"></div>
         
         <div class="container">
 
@@ -33,9 +33,24 @@
                 <div class="bird"></div>
             </div>
             
-        </div>        
+        </div>   
+        
+        
+        
+        <form onSubmit="WriteToFile(this)">
+        <label>Type your first name:</label>
+        <input type="text" name="FirstName" id="firstName" size="20">
+
+        <label>Type your last name: </label>
+        <input type="text" name="LastName" id="lastName" size="20">
+
+        <input type="submit" value="submit">
+        </form>
+        
+        
         
         <script src="../script/csstransitions.js"></script>
+        <script src="../script/filewrite.js"></script>
     </body>
     
     <footer>            

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="homepage" content="width=device-width, initial-scale=1">
+        <title>CIT261 Jonathan Carlson Encoder</title>
+        <meta name = "description" content="CIT261 Encoder">
+        <link rel="stylesheet" href="../styles/normalize.css">
+        <link id="styles" rel="stylesheet" href="../styles/encoder2.css">
+    </head>    
+
+    <header>
+        <img src="../images/code.jpg" alt="picture is broken" id="pic">
+        <h1>Text Coder<br>
+            <span style="font-size: 32.5%; font-family: Arial">Created by Jonathan Carlson</span>
+        </h1>
+    </header>
+    
+    <body>
+        <div class="row">
+            <div class="column"> 
+                <h2>
+                    Enter the text you would like to encrypt:
+                </h2>
+                <textarea name="Text1" cols="40" rows="5" type="text" id="input"></textarea>
+                <button id="encrypt">Click To Encrypt</button>
+                <input type="text" id="password" title=
+                       "If a password is present when encrypting, the recipient of the 
+                        message must enter the same password to decipher it." 
+                       placeholder="Password (optional)">
+        
+                <!-- The encoded text is diplayed here -->
+                <textarea id="encryption" class="boxarea"></textarea>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="column"> 
+                <h2>Enter the text you would like deciphered:</h2>
+                <textarea name="Text2" cols="40" rows="5" type="text" id="decipher"></textarea>
+                <button onclick=decryptText()>Click To Decipher</button>
+
+                <!-- The deciphered text is diplayed here -->
+                <textarea id="decoded" class="boxarea"></textarea>
+            </div>
+        </div>
+           
+        <script src="../script/encoder.js"></script>
+    </body>
+
+    <footer>            
+        <p>&copy; 2019 &#9670; Jonathan Carlson &#9670; Huntsville Alabama &#9670; <a href="">Car99020@BYUI.edu</a></p>
+    </footer>
+    
+</html>
