@@ -18,6 +18,15 @@ h1 {
     padding: 45px 0 30px;
     margin: -10px 0 0;
     line-height: 25px;
+    animation-name: heading-color;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;    
+}
+
+@keyframes heading-color {
+    0%   {color: white}
+    50%  {color: yellow;}
+    100%  {color: white}
 }
 
 h2 {
@@ -38,8 +47,12 @@ h2 {
     display: block;
 }
 
-#encryption, #decoded {
+#encryption, #decipher {
     font-size: 0.75em;
+}
+
+#decoded, #input {
+    font-size: 1.25em;
 }
 
 button {
@@ -75,6 +88,11 @@ button {
     text-align: center;
 }
 
+.rightcolumn {
+    background-color: white;
+    height: 100vh;
+}
+
 footer {
     background-color: #00001a;
     padding: 10px;
@@ -83,4 +101,29 @@ footer {
     position: fixed;
     bottom: 0px;
     width: 100%;
+    animation-name: heading-color;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;     
+}
+
+.triangle-left {
+    border-top: 40px solid transparent;
+    border-right: 15px solid white;
+    border-bottom: 40px solid transparent;
+    position: relative;
+    left: -161px;
+}
+
+.triangle-right {
+    border-top: 40px solid transparent;
+    border-left: 15px solid white;
+    border-bottom: 40px solid transparent;
+    position: relative;
+    left: 145px;
+} 
+
+.offset {
+    position: absolute;
+    top: 20px;
+    left: 50%;
 }

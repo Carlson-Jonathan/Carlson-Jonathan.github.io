@@ -11,8 +11,10 @@
 
     <header>
         <img src="../images/code.jpg" alt="picture is broken" id="pic">
-        <h1>Text Coder<br>
+        <div class="offset"><div class="triangle-left"></div></div>
+        <h1 id="title">Text Coder<br>
             <span style="font-size: 32.5%; font-family: Arial">Created by Jonathan Carlson</span>
+            <div class="offset"><div class="triangle-right"></div></div>
         </h1>
     </header>
     
@@ -40,21 +42,23 @@
                 <h2>
                     Enter the text you would like deciphered:
                 </h2>
-                <textarea name="Text2" cols="50" rows="5" type="text" class="boxarea" id="decipher"></textarea>
+                <textarea name="Text2" type="text" class="boxarea" id="decipher"></textarea>
                 <button id="decrypt">Decipher</button>
                 <input type="text" class="password" id="passwordright" placeholder="Password (optional)">
                 
                 <textarea id="decoded" class="boxarea"></textarea>
             </div>
 
-            <div class="column"> 
+            <div class="column rightcolumn"> 
                 <h2>Cyber Securty News Feeds displayed with AJAX</h2>
             </div>
         
         </div>
         
+        <div class="triangle-left"></div>
            
         <script src="../script/encoder.js"></script>
+        <script src="../script/encoder2.js"></script>
     </body>
 
     <footer>            

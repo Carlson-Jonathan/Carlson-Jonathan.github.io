@@ -11,29 +11,6 @@
 "use strict"
 
 /******************************************************************************
-* Animation and view modifying functions.
-******************************************************************************/
-
-document.getElementsByClassName("boxarea").onfocus = function(){ focColor() };
-document.getElementsByClassName("boxarea").onblur = function(){ blurColor() };
-document.getElementById("input").onfocus = function(){ focColor() };
-document.getElementById("input").onblur = function(){ blurColor() };
-
-document.getElementById("encrypt").onclick = function(){ displayText() };
-document.getElementById("decrypt").onclick = function(){ decryptText() };
-
-
-function focColor() {
-    document.getElementById("input").style.backgroundColor = "#ffffcc";
-}
-
-function blurColor() {
-    document.getElementById("input").style.backgroundColor = "white";
-}
-
-
-
-/******************************************************************************
 * Variables used to scramble letters and symbols. Here is where you can find                   
 * the key to deciphering a scrambled text.           
 ******************************************************************************/
