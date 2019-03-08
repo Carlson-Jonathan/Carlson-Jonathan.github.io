@@ -23,6 +23,13 @@ h1 {
     animation-iteration-count: infinite;    
 }
 
+h1#news {
+    background-color: #000050;
+    font-size: 2em;
+    line-height: 25px;
+    padding: 15px;
+}
+
 @keyframes heading-color {
     0%   {color: white}
     50%  {color: yellow;}
@@ -37,14 +44,27 @@ h2 {
     text-shadow: 2px 2px 15px darkgrey;
 }
 
+h3 {
+    font-size: 1.4em;
+    color: #00001a;
+    margin: 10px 0 0 0;
+    text-shadow: 2px 2px 15px darkgrey;
+}
+
+p {
+    padding: 20px 5px;
+}
+
 .boxarea {
-    height: 150px;
-    width: 400px;
+    height: 225px;
+    width: 75%;
     margin: 20px auto;
     font-size: 1.2em;
     font-weight: bold;
     box-shadow: #4d4d4d 3px 3px;
     display: block;
+    padding: 10px;
+    
 }
 
 #encryption, #decipher {
@@ -55,19 +75,24 @@ h2 {
     font-size: 1.25em;
 }
 
+#decoded, #encryption {
+    background: #000050;
+    color: #ffffcc;
+}
+
 button {
-    margin: 0 20px 0 50px;
-    padding: 10px;
-    font-size: 1.5em;
+    margin: 0 25px 0 10px;
+    font-size: 1.2em;
     color: #4d4d4d;
     box-shadow: black 3px 3px;
-    border-radius: 6px;
+    border-radius: 2px;
     font-family: Times New Roman;
 }
 
 .password {
-    height: 50px;
-    width: 175px;
+    font-size: .8em;
+    height: 25px;
+    width: 145px;
     margin: 0;
     font-weight: bold;
     box-shadow: #4d4d4d 3px 3px;
@@ -83,28 +108,20 @@ button {
 
 .column {
     float: left;
-    width: 33.3%;
+    width: 37.5%;
     padding: 10px;
     text-align: center;
 }
 
 .rightcolumn {
     background-color: white;
-    height: 100vh;
+    height: 100%vh;
+    text-align: left;
+    padding: 40px;
+    width: 25%;
+    float: right;
 }
 
-footer {
-    background-color: #00001a;
-    padding: 10px;
-    color: white;
-    text-align: center;
-    position: fixed;
-    bottom: 0px;
-    width: 100%;
-    animation-name: heading-color;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;     
-}
 
 .triangle-left {
     border-top: 40px solid transparent;
@@ -126,4 +143,28 @@ footer {
     position: absolute;
     top: 20px;
     left: 50%;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.line {
+    margin: 20px 0;
+    border-bottom: solid black 1px;
+}
+
+
+
+footer {
+    background-color: #00001a;
+    color: white;
+    text-align: center;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    animation-name: heading-color;
+    animation-duration: 5s;
+    animation-iteration-count: infinite; 
 }

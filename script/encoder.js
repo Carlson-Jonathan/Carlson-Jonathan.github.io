@@ -57,7 +57,7 @@ function displayText() {
     
     var password = document.getElementById("passwordleft").value;
     var passLen = password.length;
-    var text = passLen + document.getElementById("input").value + password;
+    var text = passLen + document.getElementById("inputText").value + password;
     text = text.toLowerCase();
     text = text.split("");
     var symbols;
@@ -120,12 +120,13 @@ function alphaConverter(text) {
 
 function decryptText() {
     var text = document.getElementById("decipher").value;
-    var passWord = document.getElementById("passwordleft").value;
+    var passWord = document.getElementById("passwordright").value;
     var passPoint = passwordPointer();
     if (text.indexOf(passPoint1) > -1 & text.indexOf(passPoint2) > -1 &
         !passWord) {
         text = "Invalid Password";
         document.getElementById("decoded").innerHTML = "Password Incorrect";
+        document.getElementById("decoded").style.color = "red";       document.getElementById("decoded").style.textAlign = "center";
         return 0;
     }
     text = sliceEven(text);
@@ -136,9 +137,14 @@ function decryptText() {
     var passSlice = text.slice(text.length - passLen,text.length);
     if (passWord.toLowerCase() == passSlice) {
         text = text.slice(0,text.length - passLen);
+        document.getElementById("decoded").style.color = "#cce6ff";
+        document.getElementById("decoded").style.textAlign = "left";
+        
     } else {
-        document.getElementById("decoded").innerHTML = "Password Incorrect";
+        document.getElementById("decoded").innerHTML = "Invalid Entry";
         return 0;
+        document.getElementById("decoded").style.color = "red";
+        document.getElementById("decoded").style.textAlign = "center";
     }
     document.getElementById("decoded").innerHTML = text;
 }

@@ -28,11 +28,15 @@
                 <h2>
                     Enter the text you would like to encrypt:
                 </h2>
-                <textarea name="Text1" cols="50" rows="5" type="text" class="boxarea" id="input"></textarea>
+                <textarea id="inputText" class="boxarea"></textarea>
+                
+                <button onclick="clearText('inputText')">Clear</button>
                 <button id="encrypt">Encrypt</button>
                 <input type="text" class="password" id="passwordleft" placeholder="Password (optional)">
         
-                <textarea id="encryption" class="boxarea"></textarea>
+                <textarea disabled id="encryption" class="boxarea" style="user-select: none"></textarea>
+            
+                <button onclick="copyToClipboard('encryption')">Copy to Clipboard</button>
             </div>
 
         <!---------------------------------------------------------------------
@@ -43,20 +47,54 @@
                     Enter the text you would like deciphered:
                 </h2>
                 <textarea name="Text2" type="text" class="boxarea" id="decipher"></textarea>
+                
+                <button onclick="clearText('decipher')">Clear</button>
                 <button id="decrypt">Decipher</button>
                 <input type="text" class="password" id="passwordright" placeholder="Password (optional)">
                 
-                <textarea id="decoded" class="boxarea"></textarea>
+                <textarea disabled id="decoded" class="boxarea"></textarea>
+                <button onclick="copyToClipboard('decoded')">Copy to Clipboard</button>
             </div>
 
             <div class="column rightcolumn"> 
-                <h2>Cyber Securty News Feeds displayed with AJAX</h2>
+                <h1 id="news">Tech Crunch News</h1>
+                <div class="line"></div>
+                
+                <!--------------------------------------------------------------------------------
+                - API Story 1
+                <!------------------------------------------------------------------------------->
+                <a id="storyLinkOne">
+                    <img id="storyPicOne" alt="Image not found">
+                </a>
+                <h3 id="storyTitleOne"></h3>
+                <p id="storyDescOne"></p>
+                <div class="line"></div>
+                <!--------------------------------------------------------------------------------
+                - API Story 2
+                <!------------------------------------------------------------------------------->
+                <a id="storyLinkTwo">
+                <img id="storyPicTwo" alt="Image not found">
+                </a>
+                <h3 id="storyTitleTwo"></h3>
+                <p id="storyDescTwo"></p>
+                <div class="line"></div>
+                <!--------------------------------------------------------------------------------
+                - API Story 3
+                <!------------------------------------------------------------------------------->
+                <a id="storyLinkThree">
+                    <img id="storyPicThree" alt="Image not found">
+                </a>
+                <h3 id="storyTitleThree"></h3>
+                <p id="storyDescThree"></p>
+                
+                
+                
+                
             </div>
-        
         </div>
         
-        <div class="triangle-left"></div>
            
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="../script/encoder.js"></script>
         <script src="../script/encoder2.js"></script>
     </body>
