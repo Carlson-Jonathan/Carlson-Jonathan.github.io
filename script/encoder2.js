@@ -78,7 +78,7 @@ var url =
 'https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=01ed3de96c7f45ba924e447cde09d6a4';
 
 function displayAPI(title, description, link, picture, element) {
-    document.getElementById("storyDesc" + element).innerHTML = title;
+    document.getElementById("storyTitle" + element).innerHTML = title;
     document.getElementById("storyDesc" + element).innerHTML = description;
     document.getElementById("storyPic" + element).src = picture;
     document.getElementById("storyLink" + element).href = link;
