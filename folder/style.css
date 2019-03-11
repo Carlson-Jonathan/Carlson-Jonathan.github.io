@@ -1,0 +1,53 @@
+body {
+    background-color: #d9ffcc;
+}    
+            
+header {
+    text-align: center;
+    background-color: green;
+    position: absolute;
+    width: 105%;
+    top: 0;
+    left: 0;
+    height: 145px;
+}
+
+#topmargin {
+    margin-top: 175px;
+}
+
+h1 {
+    color: yellow;
+    font-size: 48px;
+    font-family: Comic Sans MS;
+}
+
+p {
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    color: orange;
+    display: inline-block;
+    margin: 20px;
+}
+
+a {
+  color: darkgreen;
+}
+
+p#foot {
+    font-size: 20px;
+    background-color: green;
+    padding: 20px;
+    margin: 0;
+    width: 100%;
+    color: yellow;
+}
+
+p:hover {
+    background-color: yellow;        
+} 
+
+img {
+    margin: auto;
+}
