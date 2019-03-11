@@ -125,7 +125,7 @@ function decryptText() {
     if (text.indexOf(passPoint1) > -1 & text.indexOf(passPoint2) > -1 &
         !passWord) {
         text = "Invalid Password";
-        document.getElementById("decoded").innerHTML = "Password Incorrect";
+        document.getElementById("decoded").innerHTML = "Password Incorrect!";
         document.getElementById("decoded").style.color = "red";       document.getElementById("decoded").style.textAlign = "center";
         document.getElementById("decoded").style.fontSize = "3em";
         return 0;

@@ -80,15 +80,46 @@ p {
     color: #ffffcc;
 }
 
+
 button {
-    margin: 0 25px 0 10px;
-    font-size: 1.2em;
-    color: #4d4d4d;
     box-shadow: black 3px 3px;
     border-radius: 2px;
     font-family: Times New Roman;
+    color: black;
+    margin: 0 25px 0 10px;
+    font-size: 1.2em;
+    position: relative;
+    background-color: #99bbff;
+    border: none;
+    text-align: center;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
 }
 
+button:after {
+    content: "";
+    background: #3333ff;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+
+button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+
+button {
+}
 .password {
     font-size: .8em;
     height: 25px;
