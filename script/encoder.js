@@ -127,6 +127,7 @@ function decryptText() {
         text = "Invalid Password";
         document.getElementById("decoded").innerHTML = "Password Incorrect";
         document.getElementById("decoded").style.color = "red";       document.getElementById("decoded").style.textAlign = "center";
+        document.getElementById("decoded").style.fontSize = "3em";
         return 0;
     }
     text = sliceEven(text);
@@ -137,14 +138,16 @@ function decryptText() {
     var passSlice = text.slice(text.length - passLen,text.length);
     if (passWord.toLowerCase() == passSlice) {
         text = text.slice(0,text.length - passLen);
-        document.getElementById("decoded").style.color = "#cce6ff";
+        document.getElementById("decoded").style.color = "yellow";
         document.getElementById("decoded").style.textAlign = "left";
+        document.getElementById("decoded").style.fontSize = "1.25em";
         
     } else {
-        document.getElementById("decoded").innerHTML = "Invalid Entry";
-        return 0;
+        document.getElementById("decoded").innerHTML = "Password Incorrect!";
         document.getElementById("decoded").style.color = "red";
         document.getElementById("decoded").style.textAlign = "center";
+        document.getElementById("decoded").style.fontSize = "3em";
+        return 0;
     }
     document.getElementById("decoded").innerHTML = text;
 }

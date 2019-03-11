@@ -123,20 +123,20 @@ button {
 }
 
 
-.triangle-left {
+div#triangle-left, div#triangle-lefttwo {
     border-top: 40px solid transparent;
     border-right: 15px solid white;
     border-bottom: 40px solid transparent;
     position: relative;
-    left: -161px;
+    display: inline-block;
 }
 
-.triangle-right {
+div#triangle-right, div#triangle-righttwo {
     border-top: 40px solid transparent;
     border-left: 15px solid white;
     border-bottom: 40px solid transparent;
     position: relative;
-    left: 145px;
+    display: inline-block;
 } 
 
 .offset {
@@ -154,8 +154,6 @@ img {
     margin: 20px 0;
     border-bottom: solid black 1px;
 }
-
-
 
 footer {
     background-color: #00001a;

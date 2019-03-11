@@ -44,6 +44,53 @@ function focColor(a) { document.getElementById(a).style.backgroundColor = "#ffff
 function blurColor(a) { document.getElementById(a).style.backgroundColor = 
     "white"; }
 
+/******************************************************************************
+* CSS Modifying functions
+* Here are some JS functions that modify CSS properties onClick or onWhatever.
+* triangleRight() and triangleLeft() simple animate the triangles in the 
+* page heading to move opposite directions. Activated in the body element tag.
+* Yes, I know these two functions should be combined. Feeling a little tired
+* though.
+******************************************************************************/
+function triangleRight(element) {
+  
+    var elem = document.getElementById(element);   
+    var pos = 135;
+    var id = setInterval(frame, 100);
+    var opacity = .5;
+  
+    function frame() {
+        if (pos == 175) {
+            pos = 135;
+            opacity = .5;
+        } else {
+            pos++; 
+            opacity -= .01875;
+            elem.style.left = pos + "px"; 
+            elem.style.opacity = opacity;
+        }
+    }
+}
+
+function triangleLeft(element) {
+  
+    var elem = document.getElementById(element);   
+    var pos = -172;
+    var id = setInterval(frame, 100);
+    var opacity = .5;
+  
+    function frame() {
+        if (pos == -212) {
+            opacity = .5;
+            pos = -172;
+        } else {
+            pos--; 
+            opacity -= .01875;
+            elem.style.left = pos + "px"; 
+            elem.style.opacity = opacity;
+        }
+    }
+}
 
 /******************************************************************************
 * copyToClipboard(elementID)
@@ -68,14 +115,45 @@ function clearText(element) {
 }
 
 /******************************************************************************
-* displayAPI()
-* This function uses jQuery to retrive API information from 'Tech Crunch',
-* interprets it, and places it in the correct spots on the HTML page.
+* myAjax() & displayAPI()
+* These functions use XMLHttp requests to retrive API information from 
+* 'Tech Crunch', interpret it, and places it in the correct spots on the HTML 
+* page. Originally I used jQuery but had to use raw code for an assignment.
 ******************************************************************************/
-var item = ['One', 'Two', 'Three'];
-var req = new Request(url);
-var url = 
-'https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=01ed3de96c7f45ba924e447cde09d6a4';
+function myAJAX() {
+    
+    // Set Variables
+    var item = ['One', 'Two', 'Three'];
+    var rawData;
+    var xhttp = new XMLHttpRequest();
+    var site = 'https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=01ed3de96c7f45ba924e447cde09d6a4';
+    
+    // Request Data
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            
+            // Parse Data and display
+            rawData = this.responseText;
+            var jsonstring = JSON.parse(rawData);
+        }
+        
+        // Extract information from 3 different articles then display.
+        for(var i = 0; i < 3; i++) {
+                displayAPI(
+                    jsonstring.articles[i].title,
+                    jsonstring.articles[i].description,
+                    jsonstring.articles[i].url,
+                    jsonstring.articles[i].urlToImage,
+                    item[i]
+                    )
+            }
+    };
+
+    // Website where the data is extracted from. 
+    xhttp.open('GET', site, true);
+    xhttp.send();
+}
+myAJAX();
 
 function displayAPI(title, description, link, picture, element) {
     document.getElementById("storyTitle" + element).innerHTML = title;
@@ -83,6 +161,10 @@ function displayAPI(title, description, link, picture, element) {
     document.getElementById("storyPic" + element).src = picture;
     document.getElementById("storyLink" + element).href = link;
 }
+
+/******************************************************************************
+* Here is the easier jQuery way to do it. I had to use the raw method above
+* because teacher told me to. 
 
 $(document).ready(function() {
     function news() {
@@ -103,3 +185,4 @@ $(document).ready(function() {
     }
     news();
 })
+******************************************************************************/

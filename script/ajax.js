@@ -29,7 +29,9 @@ function myAJAX() {
             // Parse Data and display
             rawData = this.responseText;
             var jsonString = JSON.parse(rawData);
-            display(jsonString);
+            document.write(jsonString.articles[0].title);
+            
+            //display(jsonString);
         }
     };
 

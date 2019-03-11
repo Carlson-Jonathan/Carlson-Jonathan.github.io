@@ -11,14 +11,23 @@
 
     <header>
         <img src="../images/code.jpg" alt="picture is broken" id="pic">
-        <div class="offset"><div class="triangle-left"></div></div>
+        <div class="offset">
+            <div id="triangle-left"></div>
+            <div id="triangle-lefttwo"></div>
+        </div>
         <h1 id="title">Text Coder<br>
             <span style="font-size: 32.5%; font-family: Arial">Created by Jonathan Carlson</span>
-            <div class="offset"><div class="triangle-right"></div></div>
+            <div class="offset">
+                <div id="triangle-right"></div>
+                <div id="triangle-righttwo"></div>
+            </div>
         </h1>
     </header>
     
-    <body>
+    <body onload="triangleRight('triangle-right'),
+                  triangleRight('triangle-righttwo'),
+                  triangleLeft('triangle-left'),
+                  triangleLeft('triangle-lefttwo')">
         
         <!---------------------------------------------------------------------
         - Left Column - Encryption Items.
