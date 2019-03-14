@@ -152,7 +152,6 @@ function decryptText() {
         return 0;
     }
     decode.innerHTML = text;
-    //blurColor2();
 }
 
 /******************************************************************************    

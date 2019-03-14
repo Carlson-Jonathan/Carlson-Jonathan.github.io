@@ -38,7 +38,14 @@ document.getElementById("passwordright").onblur = function(){
 ******************************************************************************/
 document.getElementById("encrypt").onclick = function(){ displayText() };
 document.getElementById("decrypt").onclick = function(){ decryptText() };
-//document.getElementById("decoded").onclick = function(){ displayText() };
+
+var elements = ["inputText", "decipher", "passwordleft", "passwordright",
+               "decoded"];
+
+function anticheckbox() {
+    for(var i = 0; i < elements.length; i++)
+        blurColor(elements[i]);
+}
 
 function focColor(a) { 
     document.getElementById(a).style.backgroundColor = "#ffffcc";
@@ -52,17 +59,6 @@ function blurColor(a) {
         document.getElementById(a).style.color = "white";
     else
         document.getElementById(a).style.color = "black";
-}
-
-function focColor2() { 
-    document.getElementById("decoded").style.color = "white";
-}
-
-function blurColor2() { 
-    if(document.getElementById("antiSF").checked == true)
-        document.getElementById("decoded").style.color = "#000050";
-    else
-        document.getElementById("decoded").style.color = "white";
 }
 
 /******************************************************************************
