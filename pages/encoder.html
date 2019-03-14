@@ -41,11 +41,15 @@
                 
                 <button onclick="clearText('inputText')">Clear</button>
                 <button id="encrypt">Encrypt</button>
-                <input type="text" class="password" id="passwordleft" placeholder="Password (optional)">
+                <input type="password" class="password" id="passwordleft" placeholder="Password (optional)">
+                <input  type="checkbox" onclick="showPass('passwordleft')">
+                <span class="checkboxtext">Show</span>
         
                 <textarea disabled id="encryption" class="boxarea" style="user-select: none"></textarea>
             
                 <button onclick="copyToClipboard('encryption')">Copy to Clipboard</button>
+                <input  type="checkbox" id="antiSF" checked>
+                <span class="checkboxtext">Anti-Shoulder Surfing</span>                
             </div>
 
         <!---------------------------------------------------------------------
@@ -59,9 +63,11 @@
                 
                 <button onclick="clearText('decipher')">Clear</button>
                 <button id="decrypt">Decipher</button>
-                <input type="text" class="password" id="passwordright" placeholder="Password (optional)">
+                <input type="password" class="password" id="passwordright" placeholder="Password (optional)">
+                <input  type="checkbox" onclick="showPass('passwordright')">
+                <span class="checkboxtext">Show</span>
                 
-                <textarea disabled id="decoded" class="boxarea"></textarea>
+                <textarea id="decoded" class="boxarea" onfocus="focColor('decoded')" onblur="blurColor('decoded')"></textarea>
                 <button onclick="copyToClipboard('decoded')">Copy to Clipboard</button>
             </div>
 

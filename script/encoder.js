@@ -122,12 +122,14 @@ function decryptText() {
     var text = document.getElementById("decipher").value;
     var passWord = document.getElementById("passwordright").value;
     var passPoint = passwordPointer();
+    var decode = document.getElementById("decoded");
     if (text.indexOf(passPoint1) > -1 & text.indexOf(passPoint2) > -1 &
         !passWord) {
         text = "Invalid Password";
-        document.getElementById("decoded").innerHTML = "Password Incorrect!";
-        document.getElementById("decoded").style.color = "red";       document.getElementById("decoded").style.textAlign = "center";
-        document.getElementById("decoded").style.fontSize = "3em";
+        decode.innerHTML = "Password Incorrect!";
+        decode.style.color = "red";       
+        decode.style.textAlign = "center";
+        decode.style.fontSize = "3em";
         return 0;
     }
     text = sliceEven(text);
@@ -138,16 +140,31 @@ function decryptText() {
     var passSlice = text.slice(text.length - passLen,text.length);
     if (passWord.toLowerCase() == passSlice) {
         text = text.slice(0,text.length - passLen);
-        document.getElementById("decoded").style.color = "yellow";
-        document.getElementById("decoded").style.textAlign = "left";
-        document.getElementById("decoded").style.fontSize = "1.25em";
-        
+        decode.style.color = "white";
+        decode.style.textAlign = "left";
+        decode.style.fontSize = "1.25em";
+        decode.focus();
     } else {
-        document.getElementById("decoded").innerHTML = "Password Incorrect!";
-        document.getElementById("decoded").style.color = "red";
-        document.getElementById("decoded").style.textAlign = "center";
-        document.getElementById("decoded").style.fontSize = "3em";
+        decode.innerHTML = "Password Incorrect!";
+        decode.style.color = "red";
+        decode.style.textAlign = "center";
+        decode.style.fontSize = "3em";
         return 0;
     }
-    document.getElementById("decoded").innerHTML = text;
+    decode.innerHTML = text;
+    //blurColor2();
+}
+
+/******************************************************************************    
+* showPass()
+* This function works with a checkbox beside the password input field to 
+* allow the user to view the password instead of masking it.
+******************************************************************************/ 
+function showPass(element) {
+    var x = document.getElementById(element);
+    if (x.type === "password") {
+        x.type = "text";
+    } else {
+        x.type = "password";
+    }
 }

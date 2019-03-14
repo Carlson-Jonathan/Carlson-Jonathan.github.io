@@ -38,11 +38,32 @@ document.getElementById("passwordright").onblur = function(){
 ******************************************************************************/
 document.getElementById("encrypt").onclick = function(){ displayText() };
 document.getElementById("decrypt").onclick = function(){ decryptText() };
+//document.getElementById("decoded").onclick = function(){ displayText() };
 
-function focColor(a) { document.getElementById(a).style.backgroundColor = "#ffffcc"; }
+function focColor(a) { 
+    document.getElementById(a).style.backgroundColor = "#ffffcc";
+    document.getElementById(a).style.color = "black";
+}
 
-function blurColor(a) { document.getElementById(a).style.backgroundColor = 
-    "white"; }
+function blurColor(a) { 
+    var ele = document.getElementById(a);
+    ele.style.backgroundColor = "white"; 
+    if(document.getElementById("antiSF").checked == true)
+        document.getElementById(a).style.color = "white";
+    else
+        document.getElementById(a).style.color = "black";
+}
+
+function focColor2() { 
+    document.getElementById("decoded").style.color = "white";
+}
+
+function blurColor2() { 
+    if(document.getElementById("antiSF").checked == true)
+        document.getElementById("decoded").style.color = "#000050";
+    else
+        document.getElementById("decoded").style.color = "white";
+}
 
 /******************************************************************************
 * CSS Modifying functions
