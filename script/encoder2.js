@@ -22,6 +22,8 @@ document.getElementById("inputText").onfocus = function(){ focColor("inputText")
 document.getElementById("inputText").onblur = function(){ blurColor("inputText") };
 document.getElementById("decipher").onfocus = function(){ focColor("decipher") };
 document.getElementById("decipher").onblur = function(){ blurColor("decipher") };
+document.getElementById("encryption").onfocus = function(){ focColor("encryption") };
+document.getElementById("encryption").onblur = function(){ blurColor("encryption") };
 
 document.getElementById("passwordleft").onfocus = function(){
     focColor("passwordleft") };
@@ -40,7 +42,7 @@ document.getElementById("encrypt").onclick = function(){ displayText() };
 document.getElementById("decrypt").onclick = function(){ decryptText() };
 
 var elements = ["inputText", "decipher", "passwordleft", "passwordright",
-               "decoded"];
+               "decoded", "encryption"];
 
 function anticheckbox() {
     for(var i = 0; i < elements.length; i++)

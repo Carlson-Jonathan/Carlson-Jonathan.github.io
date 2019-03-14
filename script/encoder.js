@@ -84,6 +84,7 @@ function displayText() {
     text = text.reverse();
     text = text.join("");            
     document.getElementById("encryption").innerHTML = text;
+    document.getElementById("encryption").focus();
 }
 
 /******************************************************************************    
