@@ -142,7 +142,7 @@ function clearText(element) {
 function myAJAX() {
     
     // Set Variables
-    var item = ['One', 'Two', 'Three'];
+    var item = ['One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight'];
     var rawData;
     var xhttp = new XMLHttpRequest();
     var site = 'https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=01ed3de96c7f45ba924e447cde09d6a4';
@@ -157,7 +157,7 @@ function myAJAX() {
         }
         
         // Extract information from 3 different articles then display.
-        for(var i = 0; i < 3; i++) {
+        for(var i = 0; i < 8; i++) {
                 displayAPI(
                     jsonstring.articles[i].title,
                     jsonstring.articles[i].description,

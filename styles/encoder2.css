@@ -45,19 +45,21 @@ h2 {
 }
 
 h3 {
+    text-align: center;
     font-size: 1.4em;
     color: #00001a;
-    margin: 10px 0 0 0;
+    margin: 10px 0;
     text-shadow: 2px 2px 15px darkgrey;
 }
 
 p {
-    padding: 20px 5px;
+    padding: 10px 5px;
+    text-align: justify;
 }
 
 .boxarea {
     height: 225px;
-    width: 75%;
+    width: 80%;
     margin: 20px auto;
     font-size: 1.25em;
     font-weight: bold;
@@ -116,7 +118,7 @@ button:active:after {
     font-size: .8em;
     height: 25px;
     width: 145px;
-    margin: 0;
+    margin-top: 15px;
     font-weight: bold;
     box-shadow: #4d4d4d 3px 3px;
     padding: 7px;
@@ -135,32 +137,59 @@ input[type=checkbox]
 
 .checkboxtext
 {
-  font-size: 110%;
-  display: inline;
+    font-size: 110%;
+    display: inline;
 }
 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+#antisurf {
+    margin-top: 15px;
 }
 
 .column {
-    float: left;
-    width: 37.5%;
-    padding: 10px;
     text-align: center;
 }
 
 .rightcolumn {
-    background-color: white;
-    height: 100%vh;
-    text-align: left;
-    padding: 40px;
-    width: 25%;
-    float: right;
+    margin-top: 50px;
 }
 
+/* Apply the below if the screen width is greater than 800 pixels. */
+@media only screen and (min-width: 800px) {
+
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    
+    .column {
+        float: left;
+        width: 50%;
+        padding: 10px;
+    }
+
+    .rightcolumn {
+        background-color: white;
+        padding: 40px;
+        width: 100%;
+        margin: 0;
+    }
+
+    /* Apply the below if screen width is greater than 1200 pixels. */
+    @media only screen and (min-width: 1200px) {
+
+        .column {
+            width: 37.5%;
+        }
+
+        .rightcolumn {
+            height: 750px;
+            width: 25%;
+            float: right;
+            overflow: scroll;
+        }
+    }
+}
 
 div#triangle-left, div#triangle-lefttwo {
     border-top: 40px solid transparent;
@@ -197,11 +226,11 @@ img {
 footer {
     background-color: #00001a;
     color: white;
-    text-align: center;
-    position: fixed;
-    bottom: 0px;
-    width: 100%;
     animation-name: heading-color;
     animation-duration: 5s;
     animation-iteration-count: infinite; 
+    bottom: 0;
+    width: 100%;
+    padding: 15px;
+    text-align: center;
 }

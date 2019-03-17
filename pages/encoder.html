@@ -7,6 +7,7 @@
         <meta name = "description" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="../styles/normalize.css">
         <link id="styles" rel="stylesheet" href="../styles/encoder2.css">
+        
     </head>    
 
     <header>
@@ -41,15 +42,21 @@
                 
                 <button onclick="clearText('inputText')">Clear</button>
                 <button id="encrypt">Encrypt</button>
-                <input type="password" class="password" id="passwordleft" placeholder="Password (optional)">
-                <input  type="checkbox" onclick="showPass('passwordleft')">
-                <span class="checkboxtext">Show</span>
+                
+                <div>
+                    <input type="password" class="password" id="passwordleft" placeholder="Password (optional)">
+                    <input  type="checkbox" onclick="showPass('passwordleft')">
+                    <span class="checkboxtext">Show</span>
+                </div>
         
                 <textarea id="encryption" class="boxarea" style="user-select: none"></textarea>
             
                 <button onclick="copyToClipboard('encryption')">Copy to Clipboard</button>
-                <input  type="checkbox" id="antiSF" onclick="anticheckbox()" checked>
-                <span class="checkboxtext">Anti-Shoulder Surfing</span>                
+                
+                <div id="antisurf">
+                    <input  type="checkbox" id="antiSF" onclick="anticheckbox()" checked>
+                    <span class="checkboxtext">Anti-Shoulder Surfing</span>   
+                </div>
             </div>
 
         <!---------------------------------------------------------------------
@@ -63,14 +70,18 @@
                 
                 <button onclick="clearText('decipher')">Clear</button>
                 <button id="decrypt">Decipher</button>
-                <input type="password" class="password" id="passwordright" placeholder="Password (optional)">
-                <input  type="checkbox" onclick="showPass('passwordright')">
-                <span class="checkboxtext">Show</span>
+                
+                <div>
+                    <input type="password" class="password" id="passwordright" placeholder="Password (optional)">
+                    <input  type="checkbox" onclick="showPass('passwordright')">
+                    <span class="checkboxtext">Show</span>
+                </div>
                 
                 <textarea id="decoded" class="boxarea" onfocus="focColor('decoded')" onblur="blurColor('decoded')"></textarea>
                 <button onclick="copyToClipboard('decoded')">Copy to Clipboard</button>
             </div>
 
+            
             <div class="column rightcolumn"> 
                 <h1 id="news">Tech Crunch News</h1>
                 <div class="line"></div>
@@ -78,31 +89,75 @@
                 <!--------------------------------------------------------------------------------
                 - API Story 1
                 <!------------------------------------------------------------------------------->
-                <a id="storyLinkOne">
-                    <img id="storyPicOne" alt="Image not found">
-                </a>
                 <h3 id="storyTitleOne"></h3>
+                <a id="storyLinkOne">
+                    <img id="storyPicOne" alt="Story Comming Soon">
+                </a>
                 <p id="storyDescOne"></p>
                 <div class="line"></div>
                 <!--------------------------------------------------------------------------------
                 - API Story 2
                 <!------------------------------------------------------------------------------->
-                <a id="storyLinkTwo">
-                <img id="storyPicTwo" alt="Image not found">
-                </a>
                 <h3 id="storyTitleTwo"></h3>
+                <a id="storyLinkTwo">
+                <img id="storyPicTwo" alt="Story Comming Soon">
+                </a>
                 <p id="storyDescTwo"></p>
                 <div class="line"></div>
                 <!--------------------------------------------------------------------------------
                 - API Story 3
                 <!------------------------------------------------------------------------------->
-                <a id="storyLinkThree">
-                    <img id="storyPicThree" alt="Image not found">
-                </a>
                 <h3 id="storyTitleThree"></h3>
+                <a id="storyLinkThree">
+                    <img id="storyPicThree" alt="Story Comming Soon">
+                </a>
                 <p id="storyDescThree"></p>
+                <div class="line"></div>
                 
-                
+                <!--------------------------------------------------------------------------------
+                - API Story 4
+                <!------------------------------------------------------------------------------->
+                <h3 id="storyTitleFour"></h3>
+                <a id="storyLinkFour">
+                    <img id="storyPicFour" alt="Story Comming Soon">
+                </a>
+                <p id="storyDescFour"></p>    
+                <div class="line"></div>
+                <!--------------------------------------------------------------------------------
+                - API Story 5
+                <!------------------------------------------------------------------------------->
+                <h3 id="storyTitleFive"></h3>
+                <a id="storyLinkFive">
+                    <img id="storyPicFive" alt="Story Comming Soon">
+                </a>
+                <p id="storyDescFive"></p> 
+                <div class="line"></div>
+                <!--------------------------------------------------------------------------------
+                - API Story 6
+                <!------------------------------------------------------------------------------->
+                <h3 id="storyTitleSix"></h3>
+                <a id="storyLinkFive">
+                    <img id="storyPicSix" alt="Story Comming Soon">
+                </a>
+                <p id="storyDescSix"></p> 
+                <div class="line"></div>                
+                <!--------------------------------------------------------------------------------
+                - API Story 7
+                <!------------------------------------------------------------------------------->
+                <h3 id="storyTitleSeven"></h3>
+                <a id="storyLinkSeven">
+                    <img id="storyPicSeven" alt="Story Comming Soon">
+                </a>
+                <p id="storyDescSeven"></p> 
+                <div class="line"></div>                
+                <!--------------------------------------------------------------------------------
+                - API Story 8
+                <!------------------------------------------------------------------------------->
+                <h3 id="storyTitleEight"></h3>
+                <a id="storyLinkEight">
+                    <img id="storyPicEight" alt="Story Comming Soon">
+                </a>
+                <p id="storyDescEight"></p>                 
                 
                 
             </div>
@@ -115,7 +170,7 @@
     </body>
 
     <footer>            
-        <p>&copy; 2019 &#9670; Jonathan Carlson &#9670; Huntsville Alabama &#9670; <u>Car99020@BYUI.edu</u></p>
+        <p style="text-align: center">&copy; 2019 &#9670; Jonathan Carlson &#9670; Huntsville Alabama &#9670; <u>Car99020@BYUI.edu</u></p>
     </footer>
     
 </html>
