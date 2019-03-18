@@ -37,9 +37,9 @@ h1#news {
 }
 
 h2 {
-    font-size: 1.4em;
+    font-size: 1.3em;
     color: #4d4d4d;
-    margin: 50px 0 0 0;
+    margin: 20px 0 0 0;
     height: 30px;
     text-shadow: 2px 2px 15px darkgrey;
 }
@@ -57,17 +57,6 @@ p {
     text-align: justify;
 }
 
-.boxarea {
-    height: 225px;
-    width: 80%;
-    margin: 20px auto;
-    font-size: 1.25em;
-    font-weight: bold;
-    box-shadow: #4d4d4d 3px 3px;
-    display: block;
-    padding: 10px;
-    
-}
 
 #encryption, #decipher {
     font-size: 0.75em;
@@ -82,7 +71,7 @@ button {
     border-radius: 2px;
     font-family: Times New Roman;
     color: black;
-    margin: 0 25px 0 10px;
+    margin: 0 5px;
     font-size: 1.2em;
     position: relative;
     background-color: #99bbff;
@@ -118,7 +107,6 @@ button:active:after {
     font-size: .8em;
     height: 25px;
     width: 145px;
-    margin-top: 15px;
     font-weight: bold;
     box-shadow: #4d4d4d 3px 3px;
     padding: 7px;
@@ -143,6 +131,7 @@ input[type=checkbox]
 
 #antisurf {
     margin-top: 15px;
+    
 }
 
 .column {
@@ -151,11 +140,28 @@ input[type=checkbox]
 
 .rightcolumn {
     margin-top: 50px;
+    height: 100%;
 }
 
-/* Apply the below if the screen width is greater than 800 pixels. */
-@media only screen and (min-width: 800px) {
+.boxarea {
+    height: 225px;
+    width: 100%;
+    margin: 10px auto;
+    font-size: 1.25em;
+    font-weight: bold;
+    box-shadow: #4d4d4d 3px 3px;
+    display: block;
+    padding: 10px;
+    
+}
 
+/* Apply the below if the screen width is greater than 825 pixels. */
+@media only screen and (min-width: 825px) {
+
+    .boxarea {
+        width: 90%;
+    }
+    
     .row:after {
         content: "";
         display: table;
@@ -174,19 +180,23 @@ input[type=checkbox]
         width: 100%;
         margin: 0;
     }
-
+    
     /* Apply the below if screen width is greater than 1200 pixels. */
-    @media only screen and (min-width: 1200px) {
+    @media only screen and (min-width: 1400px) {
 
         .column {
             width: 37.5%;
         }
 
         .rightcolumn {
-            height: 750px;
+            height: 725px;
             width: 25%;
             float: right;
             overflow: scroll;
+        }
+        
+        .boxarea {
+            width: 80%;
         }
     }
 }
@@ -229,8 +239,9 @@ footer {
     animation-name: heading-color;
     animation-duration: 5s;
     animation-iteration-count: infinite; 
+    position: fixed;
     bottom: 0;
     width: 100%;
-    padding: 15px;
+    padding: 5px;
     text-align: center;
 }

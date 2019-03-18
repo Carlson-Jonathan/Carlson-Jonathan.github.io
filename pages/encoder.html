@@ -43,20 +43,14 @@
                 <button onclick="clearText('inputText')">Clear</button>
                 <button id="encrypt">Encrypt</button>
                 
-                <div>
-                    <input type="password" class="password" id="passwordleft" placeholder="Password (optional)">
-                    <input  type="checkbox" onclick="showPass('passwordleft')">
-                    <span class="checkboxtext">Show</span>
-                </div>
+                <input type="password" class="password" id="passwordleft" placeholder="Password (optional)">
+                <input  type="checkbox" onclick="showPass('passwordleft')">
+                <span class="checkboxtext">Show</span><br><br>
         
-                <textarea id="encryption" class="boxarea" style="user-select: none"></textarea>
+                <textarea id="encryption" class="boxarea" style="user-select: none" spellcheck="false"></textarea>
             
-                <button onclick="copyToClipboard('encryption')">Copy to Clipboard</button>
+                <button onclick="copyToClipboard('encryption')" style>Copy to Clipboard</button>
                 
-                <div id="antisurf">
-                    <input  type="checkbox" id="antiSF" onclick="anticheckbox()" checked>
-                    <span class="checkboxtext">Anti-Shoulder Surfing</span>   
-                </div>
             </div>
 
         <!---------------------------------------------------------------------
@@ -66,19 +60,18 @@
                 <h2>
                     Enter the text you would like deciphered:
                 </h2>
-                <textarea name="Text2" type="text" class="boxarea" id="decipher"></textarea>
+                <textarea name="Text2" type="text" class="boxarea" id="decipher" spellcheck="false"></textarea>
                 
                 <button onclick="clearText('decipher')">Clear</button>
                 <button id="decrypt">Decipher</button>
                 
-                <div>
-                    <input type="password" class="password" id="passwordright" placeholder="Password (optional)">
-                    <input  type="checkbox" onclick="showPass('passwordright')">
-                    <span class="checkboxtext">Show</span>
-                </div>
-                
-                <textarea id="decoded" class="boxarea" onfocus="focColor('decoded')" onblur="blurColor('decoded')"></textarea>
-                <button onclick="copyToClipboard('decoded')">Copy to Clipboard</button>
+                <input type="password" class="password" id="passwordright" placeholder="Password (optional)">
+                <input  type="checkbox" onclick="showPass('passwordright')">
+                <span class="checkboxtext">Show</span><br><br>
+
+                <textarea id="decoded" class="boxarea" onfocus="focColor('decoded')" onblur="blurColor('decoded')" spellcheck="false"></textarea>
+                <input  type="checkbox" id="antiSF" onclick="anticheckbox()" checked>
+                <span class="checkboxtext">Anti-Shoulder Surfing</span>   
             </div>
 
             
@@ -139,25 +132,7 @@
                 <a id="storyLinkFive">
                     <img id="storyPicSix" alt="Story Comming Soon">
                 </a>
-                <p id="storyDescSix"></p> 
-                <div class="line"></div>                
-                <!--------------------------------------------------------------------------------
-                - API Story 7
-                <!------------------------------------------------------------------------------->
-                <h3 id="storyTitleSeven"></h3>
-                <a id="storyLinkSeven">
-                    <img id="storyPicSeven" alt="Story Comming Soon">
-                </a>
-                <p id="storyDescSeven"></p> 
-                <div class="line"></div>                
-                <!--------------------------------------------------------------------------------
-                - API Story 8
-                <!------------------------------------------------------------------------------->
-                <h3 id="storyTitleEight"></h3>
-                <a id="storyLinkEight">
-                    <img id="storyPicEight" alt="Story Comming Soon">
-                </a>
-                <p id="storyDescEight"></p>                 
+                <p id="storyDescSix"></p>        
                 
                 
             </div>
