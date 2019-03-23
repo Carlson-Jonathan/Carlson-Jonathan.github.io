@@ -16,7 +16,8 @@
 * CSS style modifier functions
 * Changes background color of text area and input boxes. Normally I would do 
 * this in the HTML element tags, but this assignment criteria states I need to
-* show that I can also do this using JavaScript.
+* show that I can also do this using JavaScript. I will probably clean this up
+* later by wrapping it all into a single function... maybe.
 ******************************************************************************/
 document.getElementById("inputText").onfocus = function(){ focColor("inputText") };
 document.getElementById("inputText").onblur = function(){ blurColor("inputText") };
@@ -205,3 +206,36 @@ $(document).ready(function() {
     news();
 })
 ******************************************************************************/
+
+/******************************************************************************
+* loadPasswords()
+* This function loads any previously saved passwords from the local storage 
+* into the password fields. 
+******************************************************************************/
+function loadPasswords() {
+    // Retrieve passwords from local storage
+    var loadPassleft = localStorage.getItem("encryptpas");
+    var loadPassRight = localStorage.getItem("decipherpas");
+        
+    // Set the password input fields with the retrived passwords
+    document.getElementById("passwordleft").value = loadPassleft;
+    document.getElementById("passwordright").value = loadPassRight;
+}
+
+/******************************************************************************
+* savePasswords()
+* This function saves the password strings in the password fields into local
+* storage. This function is triggered on unload (when the window closes).
+******************************************************************************/
+function savePasswords() {
+    // Pull passwords from input elements
+    var encryptPass = document.getElementById("passwordleft").value;
+    var decipherPass = document.getElementById("passwordright").value;    
+    
+    // Save the passwords to local storage
+    localStorage.setItem("encryptpas", encryptPass);
+    localStorage.setItem("decipherpas", decipherPass);
+}
+
+//Execute on page load
+loadPasswords();
