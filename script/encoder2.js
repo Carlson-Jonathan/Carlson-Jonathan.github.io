@@ -239,3 +239,36 @@ function savePasswords() {
 
 //Execute on page load
 loadPasswords();
+
+/******************************************************************************
+* saveSFPreference()
+* This function remembers if the anti-shoulder surfing check box is checked
+* and saves that preference so it is the same when the page re-loads.
+*
+* loadSFPreference()
+* This function loads the previously saved preference so it knows if the anti-
+* shoulder surfing box should be checked or not.
+******************************************************************************/
+function saveSFPreference() {
+    var checked = document.getElementById("antiSF").checked;
+    var sCheck;
+    
+    if(checked == true)
+        sCheck = "true";
+    else
+        sCheck = "false";
+    
+    localStorage.setItem("sCheck", sCheck);
+}
+
+function loadSFPreference() {
+    var check = localStorage.getItem("sCheck");
+    
+    if(check == "true")
+        document.getElementById("antiSF").checked = true;
+    else if (check == "false")
+        document.getElementById("antiSF").checked = false;
+}
+
+// Execute on page load
+loadSFPreference();

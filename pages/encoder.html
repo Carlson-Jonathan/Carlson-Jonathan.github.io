@@ -29,7 +29,7 @@
                   triangleRight('triangle-righttwo'),
                   triangleLeft('triangle-left'),
                   triangleLeft('triangle-lefttwo')" 
-          onunload="savePasswords()">
+          onunload="savePasswords(), saveSFPreference()">
         
         <!---------------------------------------------------------------------
         - Left Column - Encryption Items.
@@ -39,7 +39,7 @@
                 <h2>
                     Enter the text you would like to encrypt:
                 </h2>
-                <textarea id="inputText" class="boxarea"></textarea>
+                <textarea id="inputText" class="boxarea" onclick="saveSFPreference(), loadSFPreference()"></textarea>
                 
                 <button onclick="clearText('inputText')">Clear</button>
                 <button id="encrypt">Encrypt</button>
@@ -48,7 +48,7 @@
                 <input  type="checkbox" onclick="showPass('passwordleft')">
                 <span class="checkboxtext">Show</span><br><br>
         
-                <textarea id="encryption" class="boxarea" style="user-select: none" spellcheck="false"></textarea>
+                <textarea disabled id="encryption" class="boxarea" style="user-select: none" spellcheck="false"></textarea>
             
                 <button onclick="copyToClipboard('encryption')" style>Copy to Clipboard</button>
                 
@@ -70,7 +70,7 @@
                 <input  type="checkbox" onclick="showPass('passwordright')">
                 <span class="checkboxtext">Show</span><br><br>
 
-                <textarea id="decoded" class="boxarea" onfocus="focColor('decoded')" onblur="blurColor('decoded')" spellcheck="false"></textarea>
+                <textarea disabled id="decoded" class="boxarea" onfocus="focColor('decoded')" onblur="blurColor('decoded')" spellcheck="false"></textarea>
                 <input  type="checkbox" id="antiSF" onclick="anticheckbox()" checked>
                 <span class="checkboxtext">Anti-Shoulder Surfing</span>   
             </div>
