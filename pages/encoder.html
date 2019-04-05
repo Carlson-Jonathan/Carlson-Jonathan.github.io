@@ -48,7 +48,7 @@
                 <input  type="checkbox" onclick="showPass('passwordleft')">
                 <span class="checkboxtext">Show</span><br><br>
         
-                <textarea disabled id="encryption" class="boxarea" style="user-select: none" spellcheck="false"></textarea>
+                <textarea id="encryption" class="boxarea" style="user-select: none" spellcheck="false"></textarea>
             
                 <button onclick="copyToClipboard('encryption')" style>Copy to Clipboard</button>
                 
@@ -70,7 +70,7 @@
                 <input  type="checkbox" onclick="showPass('passwordright')">
                 <span class="checkboxtext">Show</span><br><br>
 
-                <textarea disabled id="decoded" class="boxarea" onfocus="focColor('decoded')" onblur="blurColor('decoded')" spellcheck="false"></textarea>
+                <textarea id="decoded" class="boxarea" onfocus="focColor('decoded')" onblur="blurColor('decoded')" spellcheck="false"></textarea>
                 <input  type="checkbox" id="antiSF" onclick="anticheckbox()" checked>
                 <span class="checkboxtext">Anti-Shoulder Surfing</span>   
             </div>
